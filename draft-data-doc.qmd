@@ -1,3 +1,91 @@
 ---
 title: "Draft: Data Documentation"
+author: Max Buettenback
+format: html
+bibliography: references.bib
+---
+
+# Data Documentation
+
+## Goal
+
+The goal of this report is to estimate the risk of a bridge collapse in Omaha, Nebraska over the next five years.
+
+Risk = Probability of failure × Consequence of failure
+
+---
+
+# Source 1: National Bridge Inventory
+
+The data comes from the Federal Highway Administration's National Bridge Inventory. [@fhwa_nbi]
+
+## Important Variables
+
+**Year Built**
+
+- The data type is numeric
+- It is used to calculate bridge age
+
+**Deck, Superstructure, Substructure Ratings**
+
+- The data type is Ordinal. Which is a 0-9 scale
+- Measured by visual inspection
+- 9 = excellent, 4 or below = poor
+- Used to estimate structural condition
+
+**Sufficiency Rating**
+
+- This data type is numeric(0-100)
+- Overall bridge condition score
+
+**Average Daily Traffic (ADT)**
+
+- This data type is also numeric (vehicles per day)
+- Measures how many cars use the bridge
+
+This dataset helps a lot in estimating the probability of failure in the bridges.
+
+---
+
+# Source 2: Nebraska Department of Transportation
+
+These state bridge reports are from NDOT [@ndot_bridge]
+
+## Variables used
+
+**Planned Repairs**
+
+- This data type is categorical (Yes/No)
+- Shows if repairs are scheduled
+
+**Funding Levels**
+
+- This data type is numeric (dollars)
+- Shows maintenance investment
+
+This source helps a lot in adjusting short-term risk.
+
+---
+
+# Source 3: Traffic Data
+
+This is traffic data that comes from FHWA Highway Statistics. [@fhwa_stats]
+
+**Average Annual Daily Traffic (AADT)**
+
+- This data type is numeric
+- Vehicles per day
+
+**Truck Percentage**  
+
+- This data type is numeric (%)
+
+This source is about traffic. Higher traffic means greater consequences if a collapse occurs.
+
+---
+
+# Is this enough data?
+
+I do think it is enough data. Each source provides me with different things that could help assess and prevent the bridge collapse risk in Omaha over the next five years. The NBI data provides the probability of a bridge collapsing. The NDOT data helps with local repair information, and the traffic data measure the impact. I think they work together very well.
+
 ---

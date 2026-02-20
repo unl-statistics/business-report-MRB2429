@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "draft-data-doc.html",
+    "href": "draft-data-doc.html",
+    "title": "Appendix A — Draft: Data Documentation",
+    "section": "",
+    "text": "B Data Documentation",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Draft: Data Documentation</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "“Bridge - NDOT.” n.d.\nhttps://dot.nebraska.gov/business-center/bridge/. Accessed February 19,\n2026.\n\n\n“Download NBI ASCII Files - National Bridge\nInventory - Bridge Inspection - Safety\nInspection - Bridges & Structures -\nFederal Highway Administration.” n.d.\nhttps://www.fhwa.dot.gov/bridge/nbi/ascii.cfm. Accessed February 19,\n2026.\n\n\n“Highway Statistics 2023 - Policy\nFederal Highway Administration.” n.d.\nhttps://www.fhwa.dot.gov/policyinformation/statistics/2023/. Accessed\nFebruary 19, 2026.\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "draft-data-doc.html#goal",
+    "href": "draft-data-doc.html#goal",
+    "title": "Appendix A — Draft: Data Documentation",
+    "section": "B.1 Goal",
+    "text": "B.1 Goal\nThe goal of this report is to estimate the risk of a bridge collapse in Omaha, Nebraska over the next five years.\nRisk = Probability of failure × Consequence of failure",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Draft: Data Documentation</span>"
+    ]
+  },
+  {
+    "objectID": "draft-data-doc.html#important-variables",
+    "href": "draft-data-doc.html#important-variables",
+    "title": "Appendix A — Draft: Data Documentation",
+    "section": "C.1 Important Variables",
+    "text": "C.1 Important Variables\nYear Built\n\nThe data type is numeric\nIt is used to calculate bridge age\n\nDeck, Superstructure, Substructure Ratings\n\nThe data type is Ordinal. Which is a 0-9 scale\nMeasured by visual inspection\n9 = excellent, 4 or below = poor\nUsed to estimate structural condition\n\nSufficiency Rating\n\nThis data type is numeric(0-100)\nOverall bridge condition score\n\nAverage Daily Traffic (ADT)\n\nThis data type is also numeric (vehicles per day)\nMeasures how many cars use the bridge\n\nThis dataset helps a lot in estimating the probability of failure in the bridges.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Draft: Data Documentation</span>"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Evaluation of ",
+    "section": "",
+    "text": "Preface\nYou are a data scientist for a mid-sized business, in a small group of 3-4 data scientists. You’ve been tasked with creating a report evaluating a scenario for your business. Your colleagues will also be evaluating the same scenario, and your reports will be used in aggregate to determine a consensus (or lack thereof) on the company’s action. The reports will also be used to inform downsizing that is rumored to be coming - you want to ensure your report is better than your peers so that you aren’t as easy to cut.\nYou may talk to your peers who are assigned the same scenario, but you do not want to collaborate too closely, lest you both become targets of the rumored layoffs.\n\nI’ve scaffolded this report for you to make this process easier - as we talk about different sections of a report in class and read about how to create similar sections, you will practice by writing the equivalent section of your report.\nThe basic steps for this task are as follows:\n\nIdentify the research question from the business question\nIdentify data set(s) which are (1) publicly available (you don’t have a budget to pay for private data) and (2) relevant to your task\n\n(HW Week 6) Document your data sets in draft-data-doc.qmd\n\nConduct a statistical analysis to support your answer to your research and business questions\n\nWrite a methods section for your business report corresponding to your statistical analysis\n(HW Week 9) Draft of results section of business report with relevant graphics/visual aids in draft-results.qmd\n\nWrite your report\n\n(HW Week 10) Draft of Intro/Conclusion sections in draft-intro-conclusions.qmd\n(HW Week 11) Draft of Executive summary section in draft-exec-summary.qmd\n\nRevise your report\n\n(HW Week 12 – not turned in) Revise your report\n(HW Week 13) - Rough draft of report due. Create one or more qmd files for your report (you can overwrite or delete intro.qmd and summary.qmd), include the names of each file (in order) in _quarto.yml. You should use references (edit references.bib and use pandoc citations). Make sure your report compiles and looks reasonable in both html and pdf.\nDevelop a presentation to go along with your report (Week 13). Create slides for your report using quarto.\n\nPeer revise reports\n\nPeer revise reports\n(HW Week 14) - Make edits to your report from comments received from peer review\n\nFinal report & presentation due",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "draft-data-doc.html#variables-used",
+    "href": "draft-data-doc.html#variables-used",
+    "title": "Appendix A — Draft: Data Documentation",
+    "section": "D.1 Variables used",
+    "text": "D.1 Variables used\nPlanned Repairs\n\nThis data type is categorical (Yes/No)\nShows if repairs are scheduled\n\nFunding Levels\n\nThis data type is numeric (dollars)\nShows maintenance investment\n\nThis source helps a lot in adjusting short-term risk.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Draft: Data Documentation</span>"
+    ]
+  }
+]
