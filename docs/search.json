@@ -82,5 +82,60 @@
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>Draft: Data Documentation</span>"
     ]
+  },
+  {
+    "objectID": "draft-results.html",
+    "href": "draft-results.html",
+    "title": "Appendix B — Draft: Results",
+    "section": "",
+    "text": "Data Characteristics\nThe bridge condition data was collected from the National Bridge Inventory dataset provided by the Federal Highway Administration (“Download NBI ASCII Files - National Bridge Inventory - Bridge Inspection - Safety Inspection - Bridges & Structures - Federal Highway Administration” n.d.). This dataset has information about brdige age, the structural condition, and also the overall bridge ratings.\nThe bridges condition is measured by three things, deck, superstructure, and substructure ratings. These ratings are on a scale from 0 to 9. Higher numbers mean the bridge is in better condition. The dataset also include a sufficiency rating. This ranges from 0 to 100 and gives the bridge an overall score.\nInformation about repairs and bridge management was also taken from the Nebraska Department of Transportation bridge reports (“Bridge - NDOT” n.d.). Traffic data was taken from Federal highway Administration, which includes estimates of how many vehicles use a brdige each day (“Highway Statistics 2023 - Policy Federal Highway Administration” n.d.).\nInclusion Criteria: The only bridges that were included are the ones located in the Omaha metropolitan area with complete structural condition ratings. Any bridges missing any ratings were not included.\nSome descriptive statistics:",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
+  },
+  {
+    "objectID": "draft-results.html#data-characteristics",
+    "href": "draft-results.html#data-characteristics",
+    "title": "Appendix B — Draft: Results",
+    "section": "",
+    "text": "Table 1: Shows the main variables used in this analysis.\n\n\n\n\nThe average bridge age is around 45 years.\nMost bridges have sufficiency ratings between 50 and 80.\nAround 12% of bridges have a sufficiency rating below 50, meaning it is in poor condition.\nDaily traffic ranges from a few thousand to 40,000 vehicles depending on the bridge.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
+  },
+  {
+    "objectID": "draft-results.html#primary-analysis-probability-of-failure",
+    "href": "draft-results.html#primary-analysis-probability-of-failure",
+    "title": "Appendix B — Draft: Results",
+    "section": "Primary Analysis: Probability of Failure",
+    "text": "Primary Analysis: Probability of Failure\nThe probability of bridge failure was estimated by using the structural condition ratings matched with the bridge age. Bridges with lower ratings or lower sufficiency scores are high risk.\nOlder Bridges tend to have lower sufficiency scores. This suggests gradual deterioration over time. Most bridges however, are still in good condition. Some do have lower scores that could lead to a higher risk of problems in their structure.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
+  },
+  {
+    "objectID": "draft-results.html#secondary-analysis-consequences-of-failure",
+    "href": "draft-results.html#secondary-analysis-consequences-of-failure",
+    "title": "Appendix B — Draft: Results",
+    "section": "Secondary Analysis: Consequences of Failure",
+    "text": "Secondary Analysis: Consequences of Failure\nTraffic volume and planned maintenance were examined to estimate the potential consequences of a bridge collapse. Bridges that have a higher volume of cars each day would cause a lot more disruption if they failed.\nSome bridges already have repairs planned or in the planning according to NDOT reports. This could help reduce near-term risk. Brdiges that carry high daily traffic and also have low sufficiency scores are the highest overall risk.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
+  },
+  {
+    "objectID": "draft-results.html#calculation-of-bridge-risk",
+    "href": "draft-results.html#calculation-of-bridge-risk",
+    "title": "Appendix B — Draft: Results",
+    "section": "Calculation of Bridge Risk",
+    "text": "Calculation of Bridge Risk\nOverall bridge risk combines the probability of failure and the consequences of failure:\nRisk = Probability of Failure × Consequence of Failure\n\n\n\nFigure 1: Shows how we figure out bridge risk using bridge condition and traffic.\n\n\n\nKeyfindings/Conclusion\nSome key findings that were found was that most bridges are in fair to good condition. Only about 12% are actually in poor condition and need monitoring or repair. Next key finding is older bridges tend to have lower sufficiency ratings due to gradual deterioration. Also bridges with high traffic volumes would cause the biggest disruptions if they were to collapse. In conclusion, widespread bridge failure is unlikely, but targeted monitoring and maintence of lowe-rated brdiges is recommened over the nect five years to help reduce over risk of bridge failure.\n\n\n\n\n“Bridge - NDOT.” n.d. https://dot.nebraska.gov/business-center/bridge/. Accessed February 19, 2026.\n\n\n“Download NBI ASCII Files - National Bridge Inventory - Bridge Inspection - Safety Inspection - Bridges & Structures - Federal Highway Administration.” n.d. https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm. Accessed February 19, 2026.\n\n\n“Highway Statistics 2023 - Policy Federal Highway Administration.” n.d. https://www.fhwa.dot.gov/policyinformation/statistics/2023/. Accessed February 19, 2026.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
   }
 ]

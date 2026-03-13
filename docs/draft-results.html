@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Max Buettenback">
 
 <title>Appendix B — Draft: Results – Evaluation of </title>
 <style>
@@ -20,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -172,8 +193,20 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#data-characteristics" id="toc-data-characteristics" class="nav-link active" data-scroll-target="#data-characteristics">Data Characteristics</a></li>
+  <li><a href="#primary-analysis-probability-of-failure" id="toc-primary-analysis-probability-of-failure" class="nav-link" data-scroll-target="#primary-analysis-probability-of-failure">Primary Analysis: Probability of Failure</a></li>
+  <li><a href="#secondary-analysis-consequences-of-failure" id="toc-secondary-analysis-consequences-of-failure" class="nav-link" data-scroll-target="#secondary-analysis-consequences-of-failure">Secondary Analysis: Consequences of Failure</a></li>
+  <li><a href="#calculation-of-bridge-risk" id="toc-calculation-of-bridge-risk" class="nav-link" data-scroll-target="#calculation-of-bridge-risk">Calculation of Bridge Risk</a>
+  <ul class="collapse">
+  <li><a href="#keyfindingsconclusion" id="toc-keyfindingsconclusion" class="nav-link" data-scroll-target="#keyfindingsconclusion">Keyfindings/Conclusion</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -187,6 +220,12 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Max Buettenback </p>
+          </div>
+  </div>
     
   
     
@@ -197,8 +236,64 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="data-characteristics" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="data-characteristics">Data Characteristics</h2>
+<p>The bridge condition data was collected from the National Bridge Inventory dataset provided by the Federal Highway Administration <span class="citation" data-cites="fhwa_nbi">(<a href="references.html#ref-fhwa_nbi" role="doc-biblioref"><span>“Download <span>NBI ASCII</span> Files - <span>National Bridge Inventory</span> - <span>Bridge Inspection</span> - <span>Safety Inspection</span> - <span>Bridges</span> &amp; <span>Structures</span> - <span>Federal Highway Administration</span>”</span> n.d.</a>)</span>. This dataset has information about brdige age, the structural condition, and also the overall bridge ratings.</p>
+<p>The bridges condition is measured by three things, deck, superstructure, and substructure ratings. These ratings are on a scale from 0 to 9. Higher numbers mean the bridge is in better condition. The dataset also include a sufficiency rating. This ranges from 0 to 100 and gives the bridge an overall score.</p>
+<p>Information about repairs and bridge management was also taken from the Nebraska Department of Transportation bridge reports <span class="citation" data-cites="ndot_bridge">(<a href="references.html#ref-ndot_bridge" role="doc-biblioref"><span>“Bridge - <span>NDOT</span>”</span> n.d.</a>)</span>. Traffic data was taken from Federal highway Administration, which includes estimates of how many vehicles use a brdige each day <span class="citation" data-cites="fhwa_stats">(<a href="references.html#ref-fhwa_stats" role="doc-biblioref"><span>“Highway <span>Statistics</span> 2023 - <span>Policy</span> <span>Federal Highway Administration</span>”</span> n.d.</a>)</span>.</p>
+<p>Inclusion Criteria: The only bridges that were included are the ones located in the Omaha metropolitan area with complete structural condition ratings. Any bridges missing any ratings were not included.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Table.png" class="img-fluid figure-img"></p>
+<figcaption>Table 1: Shows the main variables used in this analysis.</figcaption>
+</figure>
+</div>
+<p>Some descriptive statistics:</p>
+<ul>
+<li>The average bridge age is around 45 years.</li>
+<li>Most bridges have sufficiency ratings between 50 and 80.</li>
+<li>Around 12% of bridges have a sufficiency rating below 50, meaning it is in poor condition.</li>
+<li>Daily traffic ranges from a few thousand to 40,000 vehicles depending on the bridge.</li>
+</ul>
+</section>
+<section id="primary-analysis-probability-of-failure" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="primary-analysis-probability-of-failure">Primary Analysis: Probability of Failure</h2>
+<p>The probability of bridge failure was estimated by using the structural condition ratings matched with the bridge age. Bridges with lower ratings or lower sufficiency scores are high risk.</p>
+<p>Older Bridges tend to have lower sufficiency scores. This suggests gradual deterioration over time. Most bridges however, are still in good condition. Some do have lower scores that could lead to a higher risk of problems in their structure.</p>
+</section>
+<section id="secondary-analysis-consequences-of-failure" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="secondary-analysis-consequences-of-failure">Secondary Analysis: Consequences of Failure</h2>
+<p>Traffic volume and planned maintenance were examined to estimate the potential consequences of a bridge collapse. Bridges that have a higher volume of cars each day would cause a lot more disruption if they failed.</p>
+<p>Some bridges already have repairs planned or in the planning according to NDOT reports. This could help reduce near-term risk. Brdiges that carry high daily traffic and also have low sufficiency scores are the highest overall risk.</p>
+</section>
+<section id="calculation-of-bridge-risk" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="calculation-of-bridge-risk">Calculation of Bridge Risk</h2>
+<p>Overall bridge risk combines the probability of failure and the consequences of failure:</p>
+<p>Risk = Probability of Failure × Consequence of Failure</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="FlowChart.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 1: Shows how we figure out bridge risk using bridge condition and traffic.</figcaption>
+</figure>
+</div>
+<section id="keyfindingsconclusion" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="keyfindingsconclusion">Keyfindings/Conclusion</h3>
+<p>Some key findings that were found was that most bridges are in fair to good condition. Only about 12% are actually in poor condition and need monitoring or repair. Next key finding is older bridges tend to have lower sufficiency ratings due to gradual deterioration. Also bridges with high traffic volumes would cause the biggest disruptions if they were to collapse. In conclusion, widespread bridge failure is unlikely, but targeted monitoring and maintence of lowe-rated brdiges is recommened over the nect five years to help reduce over risk of bridge failure.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-ndot_bridge" class="csl-entry" role="listitem">
+<span>“Bridge - <span>NDOT</span>.”</span> n.d. https://dot.nebraska.gov/business-center/bridge/. Accessed February 19, 2026.
+</div>
+<div id="ref-fhwa_nbi" class="csl-entry" role="listitem">
+<span>“Download <span>NBI ASCII</span> Files - <span>National Bridge Inventory</span> - <span>Bridge Inspection</span> - <span>Safety Inspection</span> - <span>Bridges</span> &amp; <span>Structures</span> - <span>Federal Highway Administration</span>.”</span> n.d. https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm. Accessed February 19, 2026.
+</div>
+<div id="ref-fhwa_stats" class="csl-entry" role="listitem">
+<span>“Highway <span>Statistics</span> 2023 - <span>Policy</span> <span>Federal Highway Administration</span>.”</span> n.d. https://www.fhwa.dot.gov/policyinformation/statistics/2023/. Accessed February 19, 2026.
+</div>
+</div>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
