@@ -17,6 +17,14 @@ Inclusion Criteria: The only bridges that were included are the ones located in 
 
 ![Table 1: Shows the main variables used in this analysis.](Table.png)
 
+::: callout-note
+
+Tables should be generated using R/python and should be included in markdown via code, so that if your data updates your table updates too.
+
+Same thing goes for your descriptive statistics -- you should use the inline code functionality in quarto to include averages and quantiles and such.
+
+:::
+
 Some descriptive statistics:
 
 - The average bridge age is around 45 years.
@@ -44,6 +52,20 @@ Risk = Probability of Failure × Consequence of Failure
 
 ![Figure 1: Shows how we figure out bridge risk using bridge condition and traffic.](FlowChart.png)
 
-### Keyfindings/Conclusion {.unnumbered}
+::: callout-note
+
+All figures must be generated reproducibly and included using quarto chunks, not figure inclusion. Do not number your figures individually - use figure labels and @fig-label to reference the figure in the text -- quarto will automatically add a number to the figure.
+
+:::
+
+### Key findings/Conclusion {.unnumbered}
 
 Some key findings that were found was that most bridges are in fair to good condition. Only about 12% are actually in poor condition and need monitoring or repair. Next key finding is older bridges tend to have lower sufficiency ratings due to gradual deterioration. Also bridges with high traffic volumes would cause the biggest disruptions if they were to collapse. In conclusion, widespread bridge failure is unlikely, but targeted monitoring and maintence of lowe-rated brdiges is recommened over the nect five years to help reduce over risk of bridge failure.
+
+::: callout-note
+
+lots of spelling in this paragraph (and throughout).
+
+Consider highlighting the conclusion in a box or something that will make it easy for a manager to find. Bullets are also useful.
+
+:::

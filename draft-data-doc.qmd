@@ -45,6 +45,12 @@ The data comes from the Federal Highway Administration's National Bridge Invento
 
 This dataset helps a lot in estimating the probability of failure in the bridges.
 
+::: callout-note
+
+You probably want a few more words in this, rather than bulleted lists (which are fine for a draft but you should revise before the final submission). You may also want to discuss missingness patterns in the data and some other basic exploratory data analysis that will help you identify any potential data quality problems.
+
+:::
+
 ---
 
 # Source 2: Nebraska Department of Transportation
