@@ -1,3 +1,19 @@
 ---
 title: "Draft: Intro/Conclusions"
 ---
+
+# Introduction
+
+Bridge safety has become a bigger concern over the recent year. The reason is because some bridges have collapsed and caused many problems in other parts of the country. Due to this, cities are starting to pay more attention to how safe their infrastructure actually is.
+
+If anyone has driven through Omaha they understand how important bridges are for daily traffic, especially on major roads like I-80. If a bridge were to fail, it could cause serious problems for both safety and transportation.
+
+The goal of this report is to estimate the risk of a bridge collapse in Omaha over the next five years. This is done by looking at bridge condition, age, traffic levels, and maintenance data from public sources.
+
+# Conclusion
+
+Overall, most bridges in Omaha are in decent condition, so the risk of a collapse is not very high. However, there are some bridges that have lower condition ratings and could be a concern.
+
+Bridges that are older and carry a lot more traffic would cause the biggest problems if something were to go wrong. Due to this, it's important to keep a close watch on these bridges and make repairs on them when needed.
+
+In the future, using more detailed data or better models could help improve these estimates. However, for now, focusing on maintenance and monitoring is the best way to reduce the risk of a collapse.
