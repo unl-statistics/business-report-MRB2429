@@ -36,13 +36,34 @@ Some descriptive statistics:
 
 The probability of bridge failure was estimated by using the structural condition ratings matched with the bridge age. Bridges with lower ratings or lower sufficiency scores are high risk.
 
+::: callout-note
+
+Descriptive stats don't help with primary analysis -- how did you do that?
+
+I know I didn't ask for draft methods, but I figured you'd do methods and results about the same time because methods are necessary to get results? Still, you need to show both the results and discuss how you got to them, and your results *must* be the result of a data analysis.
+
+:::
+
 Older Bridges tend to have lower sufficiency scores. This suggests gradual deterioration over time. Most bridges however, are still in good condition. Some do have lower scores that could lead to a higher risk of problems in their structure.
+
+::: callout-note
+
+Do you have evidence to support this last bit? Where are those bridges? Look at their geographic location -- is there a threat to major highways in Omaha or critical areas of the city?
+
+:::
 
 ## Secondary Analysis: Consequences of Failure {.unnumbered}
 
 Traffic volume and planned maintenance were examined to estimate the potential consequences of a bridge collapse. Bridges that have a higher volume of cars each day would cause a lot more disruption if they failed.
 
 Some bridges already have repairs planned or in the planning according to NDOT reports. This could help reduce near-term risk. Brdiges that carry high daily traffic and also have low sufficiency scores are the highest overall risk.
+
+::: callout-note
+Cite the NDOT reports directly.
+
+Which bridges fall into the category of high traffic and low scores? Where are they? Should there be action taken by the mayor (remember to keep the scenario description in mind) to rectify the situation?
+
+:::
 
 ## Calculation of Bridge Risk {.unnumbered}
 
