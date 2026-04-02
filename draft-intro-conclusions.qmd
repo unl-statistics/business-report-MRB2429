@@ -4,6 +4,17 @@ title: "Draft: Intro/Conclusions"
 
 # Introduction
 
+::: callout-note
+Over the recent year? Make this specific and actionable.
+
+Cite your sources for bridge collapses - news articles are fine. Add to bibliography, cite formally.
+
+Consider showing a map of Omaha and identifying critical bridges over railroads, rivers, highways.
+
+Remember the prompt and your audience and tailor your intro/conclusion to that audience.
+
+:::
+
 Bridge safety has become a bigger concern over the recent year. The reason is because some bridges have collapsed and caused many problems in other parts of the country. Due to this, cities are starting to pay more attention to how safe their infrastructure actually is.
 
 If anyone has driven through Omaha they understand how important bridges are for daily traffic, especially on major roads like I-80. If a bridge were to fail, it could cause serious problems for both safety and transportation.
@@ -17,3 +28,11 @@ Overall, most bridges in Omaha are in decent condition, so the risk of a collaps
 Bridges that are older and carry a lot more traffic would cause the biggest problems if something were to go wrong. Due to this, it's important to keep a close watch on these bridges and make repairs on them when needed.
 
 In the future, using more detailed data or better models could help improve these estimates. However, for now, focusing on maintenance and monitoring is the best way to reduce the risk of a collapse.
+
+::: callout-note
+
+Your conclusions should be focused and should directly cite your data analysis. This conclusion section could be written without the data.
+
+Focus on action items and decisions specific to your audience.
+
+:::

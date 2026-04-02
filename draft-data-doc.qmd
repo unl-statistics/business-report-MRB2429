@@ -17,9 +17,15 @@ Risk = Probability of failure × Consequence of failure
 
 # Source 1: National Bridge Inventory
 
-The data comes from the Federal Highway Administration's National Bridge Inventory. [@fhwa_nbi]
+The data comes from the Federal Highway Administration's National Bridge Inventory [@fhwa_nbi].
 
 ## Important Variables
+
+::: callout-note
+
+Consider whether this might be better formatted as a table?
+
+:::
 
 **Year Built**
 
