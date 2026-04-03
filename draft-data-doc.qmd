@@ -5,9 +5,9 @@ format: html
 bibliography: references.bib
 ---
 
-# Data Documentation
+# Data Documentation {.unnumbered}
 
-## Goal
+## Goal {.unnumbered}
 
 The goal of this report is to estimate the risk of a bridge collapse in Omaha, Nebraska over the next five years.
 
@@ -15,11 +15,11 @@ Risk = Probability of failure × Consequence of failure
 
 ---
 
-# Source 1: National Bridge Inventory
+# Source 1: National Bridge Inventory {.unnumbered}
 
 The data comes from the Federal Highway Administration's National Bridge Inventory [@fhwa_nbi].
 
-## Important Variables
+## Important Variables {.unnumbered}
 
 ::: callout-note
 
@@ -59,11 +59,11 @@ You probably want a few more words in this, rather than bulleted lists (which ar
 
 ---
 
-# Source 2: Nebraska Department of Transportation
+# Source 2: Nebraska Department of Transportation {.unnumbered}
 
 These state bridge reports are from NDOT [@ndot_bridge]
 
-## Variables used
+## Variables used {.unnumbered}
 
 **Planned Repairs**
 
@@ -79,7 +79,7 @@ This source helps a lot in adjusting short-term risk.
 
 ---
 
-# Source 3: Traffic Data
+# Source 3: Traffic Data {.unnumbered}
 
 This is traffic data that comes from FHWA Highway Statistics. [@fhwa_stats]
 
@@ -96,7 +96,7 @@ This source is about traffic. Higher traffic means greater consequences if a col
 
 ---
 
-# Is this enough data?
+# Is this enough data? {.unnumbered}
 
 I do think it is enough data. Each source provides me with different things that could help assess and prevent the bridge collapse risk in Omaha over the next five years. The NBI data provides the probability of a bridge collapsing. The NDOT data helps with local repair information, and the traffic data measure the impact. I think they work together very well.
 

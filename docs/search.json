@@ -4,7 +4,7 @@
     "href": "draft-data-doc.html",
     "title": "Appendix A — Draft: Data Documentation",
     "section": "",
-    "text": "B Data Documentation",
+    "text": "Data Documentation",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>Draft: Data Documentation</span>"
@@ -44,8 +44,8 @@
     "objectID": "draft-data-doc.html#goal",
     "href": "draft-data-doc.html#goal",
     "title": "Appendix A — Draft: Data Documentation",
-    "section": "B.1 Goal",
-    "text": "B.1 Goal\nThe goal of this report is to estimate the risk of a bridge collapse in Omaha, Nebraska over the next five years.\nRisk = Probability of failure × Consequence of failure",
+    "section": "Goal",
+    "text": "Goal\nThe goal of this report is to estimate the risk of a bridge collapse in Omaha, Nebraska over the next five years.\nRisk = Probability of failure × Consequence of failure",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>Draft: Data Documentation</span>"
@@ -55,8 +55,8 @@
     "objectID": "draft-data-doc.html#important-variables",
     "href": "draft-data-doc.html#important-variables",
     "title": "Appendix A — Draft: Data Documentation",
-    "section": "C.1 Important Variables",
-    "text": "C.1 Important Variables\nYear Built\n\nThe data type is numeric\nIt is used to calculate bridge age\n\nDeck, Superstructure, Substructure Ratings\n\nThe data type is Ordinal. Which is a 0-9 scale\nMeasured by visual inspection\n9 = excellent, 4 or below = poor\nUsed to estimate structural condition\n\nSufficiency Rating\n\nThis data type is numeric(0-100)\nOverall bridge condition score\n\nAverage Daily Traffic (ADT)\n\nThis data type is also numeric (vehicles per day)\nMeasures how many cars use the bridge\n\nThis dataset helps a lot in estimating the probability of failure in the bridges.",
+    "section": "Important Variables",
+    "text": "Important Variables\nYear Built\n\nThe data type is numeric\nIt is used to calculate bridge age\n\nDeck, Superstructure, Substructure Ratings\n\nThe data type is Ordinal. Which is a 0-9 scale\nMeasured by visual inspection\n9 = excellent, 4 or below = poor\nUsed to estimate structural condition\n\nSufficiency Rating\n\nThis data type is numeric(0-100)\nOverall bridge condition score\n\nAverage Daily Traffic (ADT)\n\nThis data type is also numeric (vehicles per day)\nMeasures how many cars use the bridge\n\nThis dataset helps a lot in estimating the probability of failure in the bridges.\n\n\n\n\n\n\nNote\n\n\n\nYou probably want a few more words in this, rather than bulleted lists (which are fine for a draft but you should revise before the final submission). You may also want to discuss missingness patterns in the data and some other basic exploratory data analysis that will help you identify any potential data quality problems.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>Draft: Data Documentation</span>"
@@ -76,8 +76,8 @@
     "objectID": "draft-data-doc.html#variables-used",
     "href": "draft-data-doc.html#variables-used",
     "title": "Appendix A — Draft: Data Documentation",
-    "section": "D.1 Variables used",
-    "text": "D.1 Variables used\nPlanned Repairs\n\nThis data type is categorical (Yes/No)\nShows if repairs are scheduled\n\nFunding Levels\n\nThis data type is numeric (dollars)\nShows maintenance investment\n\nThis source helps a lot in adjusting short-term risk.",
+    "section": "Variables used",
+    "text": "Variables used\nPlanned Repairs\n\nThis data type is categorical (Yes/No)\nShows if repairs are scheduled\n\nFunding Levels\n\nThis data type is numeric (dollars)\nShows maintenance investment\n\nThis source helps a lot in adjusting short-term risk.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>Draft: Data Documentation</span>"
@@ -99,7 +99,7 @@
     "href": "draft-results.html#data-characteristics",
     "title": "Appendix B — Draft: Results",
     "section": "",
-    "text": "Table 1: Shows the main variables used in this analysis.\n\n\n\n\nThe average bridge age is around 45 years.\nMost bridges have sufficiency ratings between 50 and 80.\nAround 12% of bridges have a sufficiency rating below 50, meaning it is in poor condition.\nDaily traffic ranges from a few thousand to 40,000 vehicles depending on the bridge.",
+    "text": "Table 1: Shows the main variables used in this analysis.\n\n\n\n\n\n\n\n\nNote\n\n\n\nTables should be generated using R/python and should be included in markdown via code, so that if your data updates your table updates too.\nSame thing goes for your descriptive statistics – you should use the inline code functionality in quarto to include averages and quantiles and such.\n\n\n\n\nThe average bridge age is around 45 years.\nMost bridges have sufficiency ratings between 50 and 80.\nAround 12% of bridges have a sufficiency rating below 50, meaning it is in poor condition.\nDaily traffic ranges from a few thousand to 40,000 vehicles depending on the bridge.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
@@ -132,10 +132,32 @@
     "href": "draft-results.html#calculation-of-bridge-risk",
     "title": "Appendix B — Draft: Results",
     "section": "Calculation of Bridge Risk",
-    "text": "Calculation of Bridge Risk\nOverall bridge risk combines the probability of failure and the consequences of failure:\nRisk = Probability of Failure × Consequence of Failure\n\n\n\nFigure 1: Shows how we figure out bridge risk using bridge condition and traffic.\n\n\n\nKeyfindings/Conclusion\nSome key findings that were found was that most bridges are in fair to good condition. Only about 12% are actually in poor condition and need monitoring or repair. Next key finding is older bridges tend to have lower sufficiency ratings due to gradual deterioration. Also bridges with high traffic volumes would cause the biggest disruptions if they were to collapse. In conclusion, widespread bridge failure is unlikely, but targeted monitoring and maintence of lowe-rated brdiges is recommened over the nect five years to help reduce over risk of bridge failure.\n\n\n\n\n“Bridge - NDOT.” n.d. https://dot.nebraska.gov/business-center/bridge/. Accessed February 19, 2026.\n\n\n“Download NBI ASCII Files - National Bridge Inventory - Bridge Inspection - Safety Inspection - Bridges & Structures - Federal Highway Administration.” n.d. https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm. Accessed February 19, 2026.\n\n\n“Highway Statistics 2023 - Policy Federal Highway Administration.” n.d. https://www.fhwa.dot.gov/policyinformation/statistics/2023/. Accessed February 19, 2026.",
+    "text": "Calculation of Bridge Risk\nOverall bridge risk combines the probability of failure and the consequences of failure:\nRisk = Probability of Failure × Consequence of Failure\n\n\n\nFigure 1: Shows how we figure out bridge risk using bridge condition and traffic.\n\n\n\n\n\n\n\n\nNote\n\n\n\nAll figures must be generated reproducibly and included using quarto chunks, not figure inclusion. Do not number your figures individually - use figure labels and ?fig-label to reference the figure in the text – quarto will automatically add a number to the figure.\n\n\n\nKey findings/Conclusion\nSome key findings that were found was that most bridges are in fair to good condition. Only about 12% are actually in poor condition and need monitoring or repair. Next key finding is older bridges tend to have lower sufficiency ratings due to gradual deterioration. Also bridges with high traffic volumes would cause the biggest disruptions if they were to collapse. In conclusion, widespread bridge failure is unlikely, but targeted monitoring and maintence of lowe-rated brdiges is recommened over the nect five years to help reduce over risk of bridge failure.\n\n\n\n\n\n\nNote\n\n\n\nlots of spelling in this paragraph (and throughout).\nConsider highlighting the conclusion in a box or something that will make it easy for a manager to find. Bullets are also useful.\n\n\n\n\n\n\n“Bridge - NDOT.” n.d. https://dot.nebraska.gov/business-center/bridge/. Accessed February 19, 2026.\n\n\n“Download NBI ASCII Files - National Bridge Inventory - Bridge Inspection - Safety Inspection - Bridges & Structures - Federal Highway Administration.” n.d. https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm. Accessed February 19, 2026.\n\n\n“Highway Statistics 2023 - Policy Federal Highway Administration.” n.d. https://www.fhwa.dot.gov/policyinformation/statistics/2023/. Accessed February 19, 2026.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
+  },
+  {
+    "objectID": "draft-exec-summary.html",
+    "href": "draft-exec-summary.html",
+    "title": "Appendix D — Draft: Executive Summary",
+    "section": "",
+    "text": "This report evaluates the risk of a bridge collapsing in Omaha, Nebraska over the nest five years. The goal of this report is to help the people that make decisions for the city understand the current risks and identify actions that can help reduce those risks.\nData from the National Bridge Inventory, Nebraska Department of Transportation, and federal traffic statistics were used to help analyze bridge condition, age, traffic levels, and planned maintenance. Risk was defined as the mixture of the probability of failure and the consequences if a failure does occur.\nThe analysis shows that most of the bridges in Omaha are in fair to good condition currently. However, there are a couple of bridges that have lower condition ratings which means they are more at risk. The older bridges were more likely to have slightly lower condition scores, suggesting that deterioration over time is also an important factor.\nTraffic data shows that some bridges carry much higher volumes of vehicles then others. So, if one of these high traffic bridges were to fail, it would cause a lot of disruption to the traffic flow and could also hurt people. Bridges that have the lower condition ratings and high traffic levels are the greatest risk.\nOverall, the risk of all bridges collapsing is very low in Omaha. However, there are certain bridges that need more attention to prevent problems in the future.\n\nRecommendations\n\nIncrease monitoring of older bridges with low condition scores\nStart and prioritize repairs for bridges in bad condition\nContinue regular inspections/maintenance\nFocus more on high traffic bridges where failure would cause greatest impact\n\nTaking these steps will help reduce the chance of bridges failing and also the potential problems that could happen if failure occurs.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Draft: Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "draft-intro-conclusions.html",
+    "href": "draft-intro-conclusions.html",
+    "title": "Appendix C — Draft: Intro/Conclusions",
+    "section": "",
+    "text": "Introduction\nBridge safety has become a bigger concern over the recent year. The reason is because some bridges have collapsed and caused many problems in other parts of the country. Due to this, cities are starting to pay more attention to how safe their infrastructure actually is.\nIf anyone has driven through Omaha they understand how important bridges are for daily traffic, especially on major roads like I-80. If a bridge were to fail, it could cause serious problems for both safety and transportation.\nThe goal of this report is to estimate the risk of a bridge collapse in Omaha over the next five years. This is done by looking at bridge condition, age, traffic levels, and maintenance data from public sources.\n\n\nConclusion\nOverall, most bridges in Omaha are in decent condition, so the risk of a collapse is not very high. However, there are some bridges that have lower condition ratings and could be a concern.\nBridges that are older and carry a lot more traffic would cause the biggest problems if something were to go wrong. Due to this, it’s important to keep a close watch on these bridges and make repairs on them when needed.\nIn the future, using more detailed data or better models could help improve these estimates. However, for now, focusing on maintenance and monitoring is the best way to reduce the risk of a collapse.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Draft: Intro/Conclusions</span>"
     ]
   }
 ]

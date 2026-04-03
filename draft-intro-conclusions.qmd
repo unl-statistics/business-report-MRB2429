@@ -2,7 +2,7 @@
 title: "Draft: Intro/Conclusions"
 ---
 
-# Introduction
+# Introduction {.unnumbered}
 
 ::: callout-note
 Over the recent year? Make this specific and actionable.
@@ -21,7 +21,7 @@ If anyone has driven through Omaha they understand how important bridges are for
 
 The goal of this report is to estimate the risk of a bridge collapse in Omaha over the next five years. This is done by looking at bridge condition, age, traffic levels, and maintenance data from public sources.
 
-# Conclusion
+# Conclusion {.unnumbered}
 
 Overall, most bridges in Omaha are in decent condition, so the risk of a collapse is not very high. However, there are some bridges that have lower condition ratings and could be a concern.
 

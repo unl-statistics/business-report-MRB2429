@@ -1,3 +1,21 @@
 ---
 title: "Draft: Executive Summary"
 ---
+This report evaluates the risk of a bridge collapsing in Omaha, Nebraska over the nest five years. The goal of this report is to help the people that make decisions for the city understand the current risks and identify actions that can help reduce those risks.
+
+Data from the National Bridge Inventory, Nebraska Department of Transportation, and federal traffic statistics were used to help analyze bridge condition, age, traffic levels, and planned maintenance. Risk was defined as the mixture of the probability of failure and the consequences if a failure does occur.
+
+The analysis shows that most of the bridges in Omaha are in fair to good condition currently. However, there are a couple of bridges that have lower condition ratings which means they are more at risk. The older bridges were more likely to have slightly lower condition scores, suggesting that deterioration over time is also an important factor.
+
+Traffic data shows that some bridges carry much higher volumes of vehicles then others. So, if one of these high traffic bridges were to fail, it would cause a lot of disruption to the traffic flow and could also hurt people. Bridges that have the lower condition ratings and high traffic levels are the greatest risk.
+
+Overall, the risk of all bridges collapsing is very low in Omaha. However, there are certain bridges that need more attention to prevent problems in the future.
+
+### Recommendations {.unnumbered}
+
+- Increase monitoring of older bridges with low condition scores
+- Start and prioritize repairs for bridges in bad condition
+- Continue regular inspections/maintenance
+- Focus more on high traffic bridges where failure would cause greatest impact
+
+Taking these steps will help reduce the chance of bridges failing and also the potential problems that could happen if failure occurs.

@@ -198,20 +198,20 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#data-documentation" id="toc-data-documentation" class="nav-link active" data-scroll-target="#data-documentation"><span class="header-section-number">B</span> Data Documentation</a>
+  <li><a href="#data-documentation" id="toc-data-documentation" class="nav-link active" data-scroll-target="#data-documentation">Data Documentation</a>
   <ul class="collapse">
-  <li><a href="#goal" id="toc-goal" class="nav-link" data-scroll-target="#goal"><span class="header-section-number">B.1</span> Goal</a></li>
+  <li><a href="#goal" id="toc-goal" class="nav-link" data-scroll-target="#goal">Goal</a></li>
   </ul></li>
-  <li><a href="#source-1-national-bridge-inventory" id="toc-source-1-national-bridge-inventory" class="nav-link" data-scroll-target="#source-1-national-bridge-inventory"><span class="header-section-number">C</span> Source 1: National Bridge Inventory</a>
+  <li><a href="#source-1-national-bridge-inventory" id="toc-source-1-national-bridge-inventory" class="nav-link" data-scroll-target="#source-1-national-bridge-inventory">Source 1: National Bridge Inventory</a>
   <ul class="collapse">
-  <li><a href="#important-variables" id="toc-important-variables" class="nav-link" data-scroll-target="#important-variables"><span class="header-section-number">C.1</span> Important Variables</a></li>
+  <li><a href="#important-variables" id="toc-important-variables" class="nav-link" data-scroll-target="#important-variables">Important Variables</a></li>
   </ul></li>
-  <li><a href="#source-2-nebraska-department-of-transportation" id="toc-source-2-nebraska-department-of-transportation" class="nav-link" data-scroll-target="#source-2-nebraska-department-of-transportation"><span class="header-section-number">D</span> Source 2: Nebraska Department of Transportation</a>
+  <li><a href="#source-2-nebraska-department-of-transportation" id="toc-source-2-nebraska-department-of-transportation" class="nav-link" data-scroll-target="#source-2-nebraska-department-of-transportation">Source 2: Nebraska Department of Transportation</a>
   <ul class="collapse">
-  <li><a href="#variables-used" id="toc-variables-used" class="nav-link" data-scroll-target="#variables-used"><span class="header-section-number">D.1</span> Variables used</a></li>
+  <li><a href="#variables-used" id="toc-variables-used" class="nav-link" data-scroll-target="#variables-used">Variables used</a></li>
   </ul></li>
-  <li><a href="#source-3-traffic-data" id="toc-source-3-traffic-data" class="nav-link" data-scroll-target="#source-3-traffic-data"><span class="header-section-number">E</span> Source 3: Traffic Data</a></li>
-  <li><a href="#is-this-enough-data" id="toc-is-this-enough-data" class="nav-link" data-scroll-target="#is-this-enough-data"><span class="header-section-number">F</span> Is this enough data?</a></li>
+  <li><a href="#source-3-traffic-data" id="toc-source-3-traffic-data" class="nav-link" data-scroll-target="#source-3-traffic-data">Source 3: Traffic Data</a></li>
+  <li><a href="#is-this-enough-data" id="toc-is-this-enough-data" class="nav-link" data-scroll-target="#is-this-enough-data">Is this enough data?</a></li>
   </ul>
 </nav>
     </div>
@@ -243,20 +243,20 @@ div.csl-indent {
 </header>
 
 
-<section id="data-documentation" class="level1" data-number="B">
-<h1 data-number="B"><span class="header-section-number">B</span> Data Documentation</h1>
-<section id="goal" class="level2" data-number="B.1">
-<h2 data-number="B.1" class="anchored" data-anchor-id="goal"><span class="header-section-number">B.1</span> Goal</h2>
+<section id="data-documentation" class="level1 unnumbered">
+<h1 class="unnumbered">Data Documentation</h1>
+<section id="goal" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="goal">Goal</h2>
 <p>The goal of this report is to estimate the risk of a bridge collapse in Omaha, Nebraska over the next five years.</p>
 <p>Risk = Probability of failure × Consequence of failure</p>
 <hr>
 </section>
 </section>
-<section id="source-1-national-bridge-inventory" class="level1" data-number="C">
-<h1 data-number="C"><span class="header-section-number">C</span> Source 1: National Bridge Inventory</h1>
+<section id="source-1-national-bridge-inventory" class="level1 unnumbered">
+<h1 class="unnumbered">Source 1: National Bridge Inventory</h1>
 <p>The data comes from the Federal Highway Administration’s National Bridge Inventory. <span class="citation" data-cites="fhwa_nbi">(<a href="references.html#ref-fhwa_nbi" role="doc-biblioref"><span>“Download <span>NBI ASCII</span> Files - <span>National Bridge Inventory</span> - <span>Bridge Inspection</span> - <span>Safety Inspection</span> - <span>Bridges</span> &amp; <span>Structures</span> - <span>Federal Highway Administration</span>”</span> n.d.</a>)</span></p>
-<section id="important-variables" class="level2" data-number="C.1">
-<h2 data-number="C.1" class="anchored" data-anchor-id="important-variables"><span class="header-section-number">C.1</span> Important Variables</h2>
+<section id="important-variables" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="important-variables">Important Variables</h2>
 <p><strong>Year Built</strong></p>
 <ul>
 <li>The data type is numeric</li>
@@ -280,14 +280,27 @@ div.csl-indent {
 <li>Measures how many cars use the bridge</li>
 </ul>
 <p>This dataset helps a lot in estimating the probability of failure in the bridges.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You probably want a few more words in this, rather than bulleted lists (which are fine for a draft but you should revise before the final submission). You may also want to discuss missingness patterns in the data and some other basic exploratory data analysis that will help you identify any potential data quality problems.</p>
+</div>
+</div>
 <hr>
 </section>
 </section>
-<section id="source-2-nebraska-department-of-transportation" class="level1" data-number="D">
-<h1 data-number="D"><span class="header-section-number">D</span> Source 2: Nebraska Department of Transportation</h1>
+<section id="source-2-nebraska-department-of-transportation" class="level1 unnumbered">
+<h1 class="unnumbered">Source 2: Nebraska Department of Transportation</h1>
 <p>These state bridge reports are from NDOT <span class="citation" data-cites="ndot_bridge">(<a href="references.html#ref-ndot_bridge" role="doc-biblioref"><span>“Bridge - <span>NDOT</span>”</span> n.d.</a>)</span></p>
-<section id="variables-used" class="level2" data-number="D.1">
-<h2 data-number="D.1" class="anchored" data-anchor-id="variables-used"><span class="header-section-number">D.1</span> Variables used</h2>
+<section id="variables-used" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="variables-used">Variables used</h2>
 <p><strong>Planned Repairs</strong></p>
 <ul>
 <li>This data type is categorical (Yes/No)</li>
@@ -302,8 +315,8 @@ div.csl-indent {
 <hr>
 </section>
 </section>
-<section id="source-3-traffic-data" class="level1" data-number="E">
-<h1 data-number="E"><span class="header-section-number">E</span> Source 3: Traffic Data</h1>
+<section id="source-3-traffic-data" class="level1 unnumbered">
+<h1 class="unnumbered">Source 3: Traffic Data</h1>
 <p>This is traffic data that comes from FHWA Highway Statistics. <span class="citation" data-cites="fhwa_stats">(<a href="references.html#ref-fhwa_stats" role="doc-biblioref"><span>“Highway <span>Statistics</span> 2023 - <span>Policy</span> <span>Federal Highway Administration</span>”</span> n.d.</a>)</span></p>
 <p><strong>Average Annual Daily Traffic (AADT)</strong></p>
 <ul>
@@ -317,8 +330,8 @@ div.csl-indent {
 <p>This source is about traffic. Higher traffic means greater consequences if a collapse occurs.</p>
 <hr>
 </section>
-<section id="is-this-enough-data" class="level1" data-number="F">
-<h1 data-number="F"><span class="header-section-number">F</span> Is this enough data?</h1>
+<section id="is-this-enough-data" class="level1 unnumbered">
+<h1 class="unnumbered">Is this enough data?</h1>
 <p>I do think it is enough data. Each source provides me with different things that could help assess and prevent the bridge collapse risk in Omaha over the next five years. The NBI data provides the probability of a bridge collapsing. The NDOT data helps with local repair information, and the traffic data measure the impact. I think they work together very well.</p>
 <hr>
 
