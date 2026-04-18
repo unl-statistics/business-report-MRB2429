@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -206,17 +226,23 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level1 unnumbered">
 <h1 class="unnumbered">Introduction</h1>
-<p>Bridge safety has become a bigger concern over the recent year. The reason is because some bridges have collapsed and caused many problems in other parts of the country. Due to this, cities are starting to pay more attention to how safe their infrastructure actually is.</p>
-<p>If anyone has driven through Omaha they understand how important bridges are for daily traffic, especially on major roads like I-80. If a bridge were to fail, it could cause serious problems for both safety and transportation.</p>
-<p>The goal of this report is to estimate the risk of a bridge collapse in Omaha over the next five years. This is done by looking at bridge condition, age, traffic levels, and maintenance data from public sources.</p>
+<p>Bridge safety has become more of a concern in the United States after some bridges have collapsed in recent years. One of those being the 2022 Pittsburgh bridge collapse <span class="citation" data-cites="bridge_collapse">(<a href="references.html#ref-bridge_collapse" role="doc-biblioref"><span>“Maintenance and <span>Oversight Failures Led</span> to 2022 <span>Pittsburgh Bridge Collapse</span>”</span> n.d.</a>)</span>. These events have made cities become more aware and pay more attention to how safe their bridges are.</p>
+<p>In Omaha, bridges are important for everyday travel, especially on major roads like I-80 and over the Missouri River. If a bridge were to fail, there would be major consequences like serious safety issues, and major traffic problems.</p>
+<p>The goal of this report is to estimate the risk of bridge collapse in Omaha over the next five years. This is done by looking at bridge condition, age, traffic levels, and maintenance data. The results are meant to help the city understand where they could be at risk of a bridge collapsing and what can be done to help reduce that risk.</p>
 </section>
 <section id="conclusion" class="level1 unnumbered">
 <h1 class="unnumbered">Conclusion</h1>
-<p>Overall, most bridges in Omaha are in decent condition, so the risk of a collapse is not very high. However, there are some bridges that have lower condition ratings and could be a concern.</p>
-<p>Bridges that are older and carry a lot more traffic would cause the biggest problems if something were to go wrong. Due to this, it’s important to keep a close watch on these bridges and make repairs on them when needed.</p>
-<p>In the future, using more detailed data or better models could help improve these estimates. However, for now, focusing on maintenance and monitoring is the best way to reduce the risk of a collapse.</p>
+<p>The results show that most bridges in Omaha are in fair to good condition, with about 12% of bridges having lower sufficiency ratings. This means the overall risk of a bridge collapse is low, but there are still some bridges that may need attention.</p>
+<p>The data also shows that older bridges tend to have lower condition ratings, and bridges with higher traffic would cause the biggest problems if a failure occurred. Because of this, bridges that are both older and heavily used represent the highest risk.</p>
+<p>Based on these findings, the city should focus on monitoring bridges with lower ratings closer, they should prioritize repairs for these structures, and continue regular inspections. These actions would help reduce both the chance of failure and the impact if one occurs.</p>
+<p>While more detailed data could improve these estimates in the future, focusing on maintenance and monitoring is the best way to reduce the risk of a bridge collapse in Omaha over the next five years.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-bridge_collapse" class="csl-entry" role="listitem">
+<span>“Maintenance and <span>Oversight Failures Led</span> to 2022 <span>Pittsburgh Bridge Collapse</span>.”</span> n.d. https://www.ntsb.gov/news/press-releases/Pages/NR20240221.aspx. Accessed April 17, 2026.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

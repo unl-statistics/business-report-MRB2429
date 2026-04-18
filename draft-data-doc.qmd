@@ -17,82 +17,86 @@ Risk = Probability of failure × Consequence of failure
 
 # Source 1: National Bridge Inventory {.unnumbered}
 
-The data comes from the Federal Highway Administration's National Bridge Inventory [@fhwa_nbi].
+The data comes from the Federal Highway Administration's National Bridge Inventory [@fhwa_nbi]. The main variables used from this dataset are shown in @tbl-nbi.
 
 ## Important Variables {.unnumbered}
 
-::: callout-note
+```{r}
+#| echo: false
+#| label: tbl-nbi
+#| tbl-cap: "Variables used from the National Bridge Inventory dataset."
 
-Consider whether this might be better formatted as a table?
+library(knitr)
 
-:::
+kable(
+  data.frame(
+    Variable = c("Year Built", "Deck Rating", "Superstructure Rating",
+                 "Substructure Rating", "Sufficiency Rating", "ADT"),
+    Data_Type = c("Numeric", "Ordinal (0–9)", "Ordinal (0–9)",
+                  "Ordinal (0–9)", "Numeric (0–100)", "Numeric"),
+    Description = c("Used to calculate bridge age",
+                    "Condition of the bridge deck",
+                    "Condition of load-bearing structure",
+                    "Condition of supports",
+                    "Overall bridge condition score",
+                    "Vehicles per day")
+  )
+)
+```
 
-**Year Built**
+These variables help show the conditions of each bridge. Lower ratings and lower sufficiency scores mean that there is a greater chance for structural problems. Bridge age is also an important factor because older bridges are more likely to show wear over time.
 
-- The data type is numeric
-- It is used to calculate bridge age
-
-**Deck, Superstructure, Substructure Ratings**
-
-- The data type is Ordinal. Which is a 0-9 scale
-- Measured by visual inspection
-- 9 = excellent, 4 or below = poor
-- Used to estimate structural condition
-
-**Sufficiency Rating**
-
-- This data type is numeric(0-100)
-- Overall bridge condition score
-
-**Average Daily Traffic (ADT)**
-
-- This data type is also numeric (vehicles per day)
-- Measures how many cars use the bridge
-
-This dataset helps a lot in estimating the probability of failure in the bridges.
-
-::: callout-note
-
-You probably want a few more words in this, rather than bulleted lists (which are fine for a draft but you should revise before the final submission). You may also want to discuss missingness patterns in the data and some other basic exploratory data analysis that will help you identify any potential data quality problems.
-
-:::
+There is a possible issue with the dataset missing data. Some bridges might not have complete ratings for every condition measure. If they have missing data, those bridges will be excluded form the analysis or reviewed carefully so that the results aren't misleading.
 
 ---
 
 # Source 2: Nebraska Department of Transportation {.unnumbered}
 
-These state bridge reports are from NDOT [@ndot_bridge]
+These state bridge reports are from NDOT [@ndot_bridge]. This source adds more local information about repairs and maintenance plans, which can help when looking at short term risk. The main variables used fomr this source are shown in @tbl-ndot.
 
-## Variables used {.unnumbered}
+## Important Variables {.unnumbered}
 
-**Planned Repairs**
+```{r}
+#| echo: false
+#| label: tbl-ndot
+#| tbl-cap: "Variables used from Nebraska Department of Transportation bridge data."
 
-- This data type is categorical (Yes/No)
-- Shows if repairs are scheduled
+kable(
+  data.frame(
+    Variable = c("Planned Repairs", "Funding Levels"),
+    Data_Type = c("Categorical (Yes/No)", "Numeric"),
+    Description = c("Shows whether repairs are scheduled",
+                    "Shows maintenance investment")
+  )
+)
+```
 
-**Funding Levels**
-
-- This data type is numeric (dollars)
-- Shows maintenance investment
-
-This source helps a lot in adjusting short-term risk.
+This source is useful because a bridge with planned repairs or available funding may have lower short-term risk than a bridge with no repair plans. It also helps add more local context that may not be fully shown in the national bridge inventory data.
 
 ---
 
 # Source 3: Traffic Data {.unnumbered}
 
-This is traffic data that comes from FHWA Highway Statistics. [@fhwa_stats]
+This is traffic data that comes from FHWA Highway Statistics. [@fhwa_stats]. This source is mainly used to help estimate the consequences of a bridge collapse instead of the probability of one actually happening.The main variables used from this source are shown in @tbl-traffic.
 
-**Average Annual Daily Traffic (AADT)**
+## Important Variables {.unnumbered}
 
-- This data type is numeric
-- Vehicles per day
+```{r}
+#| echo: false
+#| label: tbl-traffic
+#| tbl-cap: "Variables used from FHWA traffic data."
 
-**Truck Percentage**  
+kable(
+  data.frame(
+    Variable = c("Average Annual Daily Traffic (AADT)", "Truck Percentage"),
+    Data_Type = c("Numeric", "Numeric (%)"),
+    Description = c("Vehicles per day",
+                    "Percentage of trucks in traffic")
+  )
+)
+```
 
-- This data type is numeric (%)
-
-This source is about traffic. Higher traffic means greater consequences if a collapse occurs.
+This data helps show how serious the consequences would be if a bridge collapsed. A bridge that carries a high amount of traffic, especially truck traffic, would more likely cause more problems.
 
 ---
 

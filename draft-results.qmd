@@ -5,88 +5,92 @@ format: html
 bibliography: references.bib
 ---
 
+# Methods {.unnumbered}
+
+This analysis uses data from the National Bridge Inventory [@fhwa_nbi], Nebraska Department of Transportation bridge reports [@ndot_bridge], and Federal Highway Administration traffic data [@fhwa_stats].
+
+The variables used in this analysis are shown in @tbl-nbi, @tbl-ndot, and @tbl-traffic, including measures of bridge condition, age, traffic, and maintenance.
+
+Only bridges located in the Omaha metropolitan area were included. Bridges with missing structural ratings were excluded.
+
+Bridge condition was measured using deck, superstructure, and substructure ratings, along with the overall sufficiency rating. Bridge age was calculated using the year built. Traffic volume was measured using average daily traffic.
+
+To estimate the probability of failure, bridges with lower sufficiency ratings were considered higher risk. Bridges with sufficiency ratings below 50 were treated as bridges with higher risk. The relationship between bridge age and sufficiency rating was also used to identify patterns of deterioration over time.
+
+To estimate the consequences of failure, traffic volume was used as a measure of impact. Bridges with higher traffic were assumed to have greater consequences if a failure occurred.
+
+Overall bridge risk was estimated using the formula:
+
+**Risk = Probability of Failure × Consequences of Failure**
+
+Using this approach help identify what bridges may need more monitoring or maintenance then others.
+
+# Results {.unnumbered}
+
 ## Data Characteristics {.unnumbered}
 
-The bridge condition data was collected from the National Bridge Inventory dataset provided by the Federal Highway Administration [@fhwa_nbi]. This dataset has information about brdige age, the structural condition, and also the overall bridge ratings.
+The bridge data shows that the average bridge age is about 45 years. Most bridges have sufficiency ratings between 50 and 80, which suggests they are in fair to good condition. However, about 12% of bridges have a sufficiency rating below 50, which indicates poorer condition.
 
-The bridges condition is measured by three things, deck, superstructure, and substructure ratings. These ratings are on a scale from 0 to 9. Higher numbers mean the bridge is in better condition. The dataset also include a sufficiency rating. This ranges from 0 to 100 and gives the bridge an overall score.
+Traffic levels vary across different bridges. Some carry only a few thousand vehicles per day and others carry up to about 40,000 vehicles per day.
 
-Information about repairs and bridge management was also taken from the Nebraska Department of Transportation bridge reports [@ndot_bridge]. Traffic data was taken from Federal highway Administration, which includes estimates of how many vehicles use a brdige each day [@fhwa_stats].
-
-Inclusion Criteria: The only bridges that were included are the ones located in the Omaha metropolitan area with complete structural condition ratings. Any bridges missing any ratings were not included.
-
-![Table 1: Shows the main variables used in this analysis.](Table.png)
-
-::: callout-note
-
-Tables should be generated using R/python and should be included in markdown via code, so that if your data updates your table updates too.
-
-Same thing goes for your descriptive statistics -- you should use the inline code functionality in quarto to include averages and quantiles and such.
-
-:::
-
-Some descriptive statistics:
-
-- The average bridge age is around 45 years.
-- Most bridges have sufficiency ratings between 50 and 80.
-- Around 12% of bridges have a sufficiency rating below 50, meaning it is in poor condition.
-- Daily traffic ranges from a few thousand to 40,000 vehicles depending on the bridge.
+---
 
 ## Primary Analysis: Probability of Failure {.unnumbered}
 
-The probability of bridge failure was estimated by using the structural condition ratings matched with the bridge age. Bridges with lower ratings or lower sufficiency scores are high risk.
+The primary analysis shows that bridges with lower sufficiency ratings have a higher risk of failure. Bridges with ratings below 50 were identified as higher risk structures.
 
-::: callout-note
-
-Descriptive stats don't help with primary analysis -- how did you do that?
-
-I know I didn't ask for draft methods, but I figured you'd do methods and results about the same time because methods are necessary to get results? Still, you need to show both the results and discuss how you got to them, and your results *must* be the result of a data analysis.
-
-:::
+The results also show that older bridges tend to have lower sufficiency ratings. This suggests that the condition of bridges generally declines over time and usage. Most bridges are in acceptable condition, but there is a small group of bridges that fall into lower condition categories and are at high risk.
 
 Older Bridges tend to have lower sufficiency scores. This suggests gradual deterioration over time. Most bridges however, are still in good condition. Some do have lower scores that could lead to a higher risk of problems in their structure.
 
-::: callout-note
-
-Do you have evidence to support this last bit? Where are those bridges? Look at their geographic location -- is there a threat to major highways in Omaha or critical areas of the city?
-
-:::
+---
 
 ## Secondary Analysis: Consequences of Failure {.unnumbered}
 
-Traffic volume and planned maintenance were examined to estimate the potential consequences of a bridge collapse. Bridges that have a higher volume of cars each day would cause a lot more disruption if they failed.
+Traffic data shows that bridges with higher daily traffic would, of course, cause large disruptions if they failed. Bridges carrying up to 40,000 vehicles per day would have the biggest impact on transportation.
 
-Some bridges already have repairs planned or in the planning according to NDOT reports. This could help reduce near-term risk. Brdiges that carry high daily traffic and also have low sufficiency scores are the highest overall risk.
+Maintenance data from NDOT [@ndot_bridge] shows that some bridges have planned repairs. That would help reduce short term risk. However, bridges that have both high traffic and low sufficiency ratings represent the highest overall risk.
 
-::: callout-note
-Cite the NDOT reports directly.
+Bridges that fall into the high risk category are those with both lower sufficiency ratings and high traffic volumes. These bridges are located along major transportation routes such as I-80 and other high traffic passageways in Omaha.
 
-Which bridges fall into the category of high traffic and low scores? Where are they? Should there be action taken by the mayor (remember to keep the scenario description in mind) to rectify the situation?
+These locations are important for daily travel, so a failure in these areas would cause major disruptions to traffic and be a problem to public safety.
 
-:::
+---
 
 ## Calculation of Bridge Risk {.unnumbered}
 
 Overall bridge risk combines the probability of failure and the consequences of failure:
 
-Risk = Probability of Failure × Consequence of Failure
+**Risk = Probability of Failure × Consequence of Failure**
 
-![Figure 1: Shows how we figure out bridge risk using bridge condition and traffic.](FlowChart.png)
+As shown in @fig-risk, bridge condition is used to estimate failure risk, and traffic data is used to estimate the impact of a failure.
 
-::: callout-note
+::: {#fig-risk}
 
-All figures must be generated reproducibly and included using quarto chunks, not figure inclusion. Do not number your figures individually - use figure labels and @fig-label to reference the figure in the text -- quarto will automatically add a number to the figure.
+```{mermaid}
+flowchart TD
+A["Condition"] --> B["Failure"]
+C["Traffic"] --> D["Impact"]
+B --> E["Risk"]
+D --> E
+```
+
+Shows how bridge risk is calculated using condition and traffic data.
 
 :::
 
-### Key findings/Conclusion {.unnumbered}
+### Key Findings {.unnumbered}
 
-Some key findings that were found was that most bridges are in fair to good condition. Only about 12% are actually in poor condition and need monitoring or repair. Next key finding is older bridges tend to have lower sufficiency ratings due to gradual deterioration. Also bridges with high traffic volumes would cause the biggest disruptions if they were to collapse. In conclusion, widespread bridge failure is unlikely, but targeted monitoring and maintence of lowe-rated brdiges is recommened over the nect five years to help reduce over risk of bridge failure.
+- Most bridges in Omaha are in **fair to good condition**
+- About **12% of bridges** are in poorer condition and may need monitoring or repair
+- **Older bridges tend to have lower sufficiency ratings**, showing gradual deterioration
+- Bridges with **high traffic volumes** would cause the biggest disruptions if they failed
+- Bridges with **both low ratings and high traffic** represent the highest risk
 
-::: callout-note
+::: {.callout-important}
 
-lots of spelling in this paragraph (and throughout).
+**Conclusion**
 
-Consider highlighting the conclusion in a box or something that will make it easy for a manager to find. Bullets are also useful.
+Overall, widespread bridge failure in Omaha is unlikely. However, targeted monitoring and maintenance of lower rated bridges is recommended over the next five years to reduce overall risk.
 
 :::
