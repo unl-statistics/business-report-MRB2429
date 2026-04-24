@@ -1,11 +1,14 @@
----
-title: "Draft: Results"
-author: Max Buettenback
-format: html
-bibliography: references.bib
----
+# Bridge Collapse Risk Assessment in Omaha, Nebraska {.unnumbered}
 
-# Methods {.unnumbered}
+## Introduction {.unnumbered}
+
+Bridge safety has become more of a concern in the United States after several bridge collapses in recent years. One example is the 2022 Pittsburgh bridge collapse [@bridge_collapse]. Events like this have caused cities to pay more attention to the condition and safety of their bridges.
+
+In Omaha, bridges are important for everyday travel, especially on major roads like I-80 and routes that cross the Missouri River. If a bridge were to fail, it could lead to serious safety issues and major traffic problems.
+
+The goal of this report is to estimate the risk of bridge collapse in Omaha over the next five years. This is done by analyzing bridge condition, age, and traffic levels using publicly available data. The results are meant to help the city identify higher risk bridges and understand what actions can be taken to reduce that risk.
+
+## Methods {.unnumbered}
 
 This analysis primarily uses data from the National Bridge Inventory [@fhwa_nbi] and Federal Highway Administration traffic data [@fhwa_stats]. Additional information from Nebraska Department of Transportation reports [@ndot_bridge] is used to provide context for maintenance and repair decisions.
 
@@ -23,9 +26,9 @@ Overall bridge risk was estimated using the formula:
 
 This approach was used to identify bridges that may require additional monitoring or maintenance.
 
-# Results {.unnumbered}
+## Results {.unnumbered}
 
-## Data Characteristics {.unnumbered}
+### Data Characteristics {.unnumbered}
 
 The data set includes 511 bridges in the Omaha (Douglas County) area. The average bridge age is about 45 years, showing a mix of older and newer structures. Most bridges have condition ratings that fall within fair to good categories.
 
@@ -35,7 +38,7 @@ Traffic levels vary across bridges. Some carry only a small number of vehicles p
 
 ---
 
-## Primary Analysis: Probability of Failure {.unnumbered}
+### Primary Analysis: Probability of Failure {.unnumbered}
 
 The analysis shows that bridges with lower condition ratings have a higher risk of failure. Bridges with a lowest condition rating of 4 or below were identified as higher risk bridges.
 
@@ -43,7 +46,7 @@ The results also show that older bridges tend to have lower condition ratings. T
 
 ---
 
-## Secondary Analysis: Consequences of Failure {.unnumbered}
+### Secondary Analysis: Consequences of Failure {.unnumbered}
 
 Traffic data shows that bridges with higher daily traffic would cause the largest disruptions if they failed. Bridges that carry very high traffic volumes, especially on major roads like I-80, would have the greatest impact on transportation and public safety.
 
@@ -53,7 +56,7 @@ These higher risk bridges are typically located along major transportation route
 
 ---
 
-## Calculation of Bridge Risk {.unnumbered}
+### Calculation of Bridge Risk {.unnumbered}
 
 Overall bridge risk combines the probability of failure and the consequences of failure:
 
@@ -76,7 +79,7 @@ Shows how bridge risk is calculated using condition and traffic data.
 :::
 
 
-### Key Findings {.unnumbered}
+#### Key Findings {.unnumbered}
 
 - Most bridges in Omaha are in **fair to good condition**
 - Only **16 out of 511 bridges (~3%)** are in poorer condition and may need monitoring or repair
@@ -91,3 +94,13 @@ Shows how bridge risk is calculated using condition and traffic data.
 Overall, widespread bridge failure in Omaha is unlikely. However, targeted monitoring and maintenance of the small number of lower-rated bridges is recommended over the next five years to reduce overall risk.
 
 :::
+
+## Conclusion {.unnumbered}
+
+The results show that most bridges in Omaha are in fair to good condition, with only 16 out of 511 bridges having a condition rating of 4 or below, which ends up being around 3%. This means the overall risk of a bridge collapse is low, but there are still some bridges that may need attention.
+
+The data also shows that older bridges tend to have lower condition ratings, and bridges with higher traffic would cause the biggest problems if a failure occurred. Due to this, bridges that are both older and heavily used represent the highest risk.
+
+Based on these findings, the city should focus on monitoring bridges with lower ratings more closely, prioritize repairs for these structures, and continue regular inspections. These actions would help reduce both the chance of failure and the impact if one occurs.
+
+While more detailed data could improve these estimates in the future, focusing on maintenance and monitoring is currently the best way to reduce the risk of a bridge collapse in Omaha over the next five years.

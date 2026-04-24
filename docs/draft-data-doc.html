@@ -257,7 +257,7 @@ div.csl-indent {
 </section>
 <section id="source-1-national-bridge-inventory" class="level1 unnumbered">
 <h1 class="unnumbered">Source 1: National Bridge Inventory</h1>
-<p>The data comes from the Federal Highway Administration’s National Bridge Inventory <span class="citation" data-cites="fhwa_nbi">(<a href="references.html#ref-fhwa_nbi" role="doc-biblioref"><span>“Download <span>NBI ASCII</span> Files - <span>National Bridge Inventory</span> - <span>Bridge Inspection</span> - <span>Safety Inspection</span> - <span>Bridges</span> &amp; <span>Structures</span> - <span>Federal Highway Administration</span>”</span> n.d.</a>)</span>. The main variables used from this dataset are shown in <a href="#tbl-nbi" class="quarto-xref">Table&nbsp;<span>A.1</span></a>.</p>
+<p>The data comes from the Federal Highway Administration’s National Bridge Inventory <span class="citation" data-cites="fhwa_nbi">(<a href="references.html#ref-fhwa_nbi" role="doc-biblioref"><span>“Download <span>NBI ASCII</span> Files - <span>National Bridge Inventory</span> - <span>Bridge Inspection</span> - <span>Safety Inspection</span> - <span>Bridges</span> &amp; <span>Structures</span> - <span>Federal Highway Administration</span>”</span> n.d.</a>)</span>. This dataset provides information about bridge age, condition ratings, location, and traffic levels. The main variables used from this dataset are shown in <a href="#tbl-nbi" class="quarto-xref">Table&nbsp;<span>A.1</span></a>.</p>
 <section id="important-variables" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="important-variables">Important Variables</h2>
 <div class="cell">
@@ -270,9 +270,9 @@ Table&nbsp;A.1: Variables used from the National Bridge Inventory dataset.
 <div class="cell-output-display">
 <table class="do-not-create-environment cell caption-top table table-sm table-striped small">
 <colgroup>
-<col style="width: 29%">
-<col style="width: 21%">
-<col style="width: 48%">
+<col style="width: 24%">
+<col style="width: 15%">
+<col style="width: 60%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -300,15 +300,20 @@ Table&nbsp;A.1: Variables used from the National Bridge Inventory dataset.
 <tr class="even">
 <td style="text-align: left;">Substructure Rating</td>
 <td style="text-align: left;">Ordinal (0–9)</td>
-<td style="text-align: left;">Condition of supports</td>
+<td style="text-align: left;">Condition of bridge supports</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Sufficiency Rating</td>
-<td style="text-align: left;">Numeric (0–100)</td>
-<td style="text-align: left;">Overall bridge condition score</td>
+<td style="text-align: left;">Lowest Rating</td>
+<td style="text-align: left;">Ordinal (0–9)</td>
+<td style="text-align: left;">Lowest condition rating among major bridge parts</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ADT</td>
+<td style="text-align: left;">Bridge Condition</td>
+<td style="text-align: left;">Categorical</td>
+<td style="text-align: left;">Overall condition category such as Good, Fair, or Poor</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Average Daily Traffic</td>
 <td style="text-align: left;">Numeric</td>
 <td style="text-align: left;">Vehicles per day</td>
 </tr>
@@ -319,14 +324,14 @@ Table&nbsp;A.1: Variables used from the National Bridge Inventory dataset.
 </figure>
 </div>
 </div>
-<p>These variables help show the conditions of each bridge. Lower ratings and lower sufficiency scores mean that there is a greater chance for structural problems. Bridge age is also an important factor because older bridges are more likely to show wear over time.</p>
-<p>There is a possible issue with the dataset missing data. Some bridges might not have complete ratings for every condition measure. If they have missing data, those bridges will be excluded form the analysis or reviewed carefully so that the results aren’t misleading.</p>
+<p>These variables help show the condition of each bridge. Lower condition ratings indicate a greater chance of structural problems. Bridge age is also an important factor because older bridges are more likely to show wear over time.</p>
+<p>There is a possible issue with missing data in the dataset. Some bridges may not have complete ratings for every condition measure. If data is missing, those bridges will either be removed from the analysis or reviewed carefully so the results are not misleading.</p>
 <hr>
 </section>
 </section>
 <section id="source-2-nebraska-department-of-transportation" class="level1 unnumbered">
 <h1 class="unnumbered">Source 2: Nebraska Department of Transportation</h1>
-<p>These state bridge reports are from NDOT <span class="citation" data-cites="ndot_bridge">(<a href="references.html#ref-ndot_bridge" role="doc-biblioref"><span>“Bridge - <span>NDOT</span>”</span> n.d.</a>)</span>. This source adds more local information about repairs and maintenance plans, which can help when looking at short term risk. The main variables used fomr this source are shown in <a href="#tbl-ndot" class="quarto-xref">Table&nbsp;<span>A.2</span></a>.</p>
+<p>These state bridge reports are from NDOT <span class="citation" data-cites="ndot_bridge">(<a href="references.html#ref-ndot_bridge" role="doc-biblioref"><span>“Bridge - <span>NDOT</span>”</span> n.d.</a>)</span>. This source adds more local information about repairs and maintenance plans, which can help when looking at short term risk. The main variables used from this source are shown in <a href="#tbl-ndot" class="quarto-xref">Table&nbsp;<span>A.2</span></a>.</p>
 <section id="important-variables-1" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="important-variables-1">Important Variables</h2>
 <div class="cell">
@@ -368,7 +373,7 @@ Table&nbsp;A.2: Variables used from Nebraska Department of Transportation bridge
 </figure>
 </div>
 </div>
-<p>This source is useful because a bridge with planned repairs or available funding may have lower short-term risk than a bridge with no repair plans. It also helps add more local context that may not be fully shown in the national bridge inventory data.</p>
+<p>This source is useful because a bridge with planned repairs or available funding may have lower short term risk than a bridge with no repair plans. It also helps add more local context that may not be fully shown in the national bridge inventory data.</p>
 <hr>
 </section>
 </section>
@@ -428,13 +433,13 @@ Table&nbsp;A.3: Variables used from FHWA traffic data.
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-ndot_bridge" class="csl-entry" role="listitem">
-<span>“Bridge - <span>NDOT</span>.”</span> n.d. https://dot.nebraska.gov/business-center/bridge/. Accessed February 19, 2026.
+<span>“Bridge - <span>NDOT</span>.”</span> n.d. Accessed February 19, 2026. <a href="https://dot.nebraska.gov/business-center/bridge/">https://dot.nebraska.gov/business-center/bridge/</a>.
 </div>
 <div id="ref-fhwa_nbi" class="csl-entry" role="listitem">
-<span>“Download <span>NBI ASCII</span> Files - <span>National Bridge Inventory</span> - <span>Bridge Inspection</span> - <span>Safety Inspection</span> - <span>Bridges</span> &amp; <span>Structures</span> - <span>Federal Highway Administration</span>.”</span> n.d. https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm. Accessed February 19, 2026.
+<span>“Download <span>NBI ASCII</span> Files - <span>National Bridge Inventory</span> - <span>Bridge Inspection</span> - <span>Safety Inspection</span> - <span>Bridges</span> &amp; <span>Structures</span> - <span>Federal Highway Administration</span>.”</span> n.d. Accessed February 19, 2026. <a href="https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm">https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm</a>.
 </div>
 <div id="ref-fhwa_stats" class="csl-entry" role="listitem">
-<span>“Highway <span>Statistics</span> 2023 - <span>Policy</span> <span>Federal Highway Administration</span>.”</span> n.d. https://www.fhwa.dot.gov/policyinformation/statistics/2023/. Accessed February 19, 2026.
+<span>“Highway <span>Statistics</span> 2023 - <span>Policy</span> <span>Federal Highway Administration</span>.”</span> n.d. Accessed February 19, 2026. <a href="https://www.fhwa.dot.gov/policyinformation/statistics/2023/">https://www.fhwa.dot.gov/policyinformation/statistics/2023/</a>.
 </div>
 </div>
 </section>

@@ -1,10 +1,3 @@
----
-title: "Draft: Data Documentation"
-author: Max Buettenback
-format: html
-bibliography: references.bib
----
-
 # Data Documentation {.unnumbered}
 
 ## Goal {.unnumbered}

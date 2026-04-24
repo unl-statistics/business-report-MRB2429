@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Appendix C — Draft: Intro/Conclusions – Evaluation of </title>
+<title>Bridge Collapse Risk Assessment in Omaha, Nebraska – Evaluation of </title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,8 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./draft-exec-summary.html" rel="next">
-<link href="./draft-results.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./Data-Documentation.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -90,6 +90,9 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -103,7 +106,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./draft-data-doc.html">Appendices</a></li><li class="breadcrumb-item"><a href="./draft-intro-conclusions.html"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Draft: Intro/Conclusions</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Business-Report.html">Bridge Collapse Risk Assessment in Omaha, Nebraska</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -136,14 +139,20 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  <a href="./Executive-Summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Executive Summary</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  <a href="./Data-Documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Documentation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Business-Report.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Bridge Collapse Risk Assessment in Omaha, Nebraska</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -175,7 +184,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./draft-intro-conclusions.html" class="sidebar-item-text sidebar-link active">
+  <a href="./draft-intro-conclusions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Draft: Intro/Conclusions</span></span></a>
   </div>
 </li>
@@ -198,6 +207,14 @@ div.csl-indent {
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#data-characteristics" id="toc-data-characteristics" class="nav-link" data-scroll-target="#data-characteristics">Data Characteristics</a></li>
+  <li><a href="#primary-analysis-probability-of-failure" id="toc-primary-analysis-probability-of-failure" class="nav-link" data-scroll-target="#primary-analysis-probability-of-failure">Primary Analysis: Probability of Failure</a></li>
+  <li><a href="#secondary-analysis-consequences-of-failure" id="toc-secondary-analysis-consequences-of-failure" class="nav-link" data-scroll-target="#secondary-analysis-consequences-of-failure">Secondary Analysis: Consequences of Failure</a></li>
+  <li><a href="#calculation-of-bridge-risk" id="toc-calculation-of-bridge-risk" class="nav-link" data-scroll-target="#calculation-of-bridge-risk">Calculation of Bridge Risk</a></li>
+  </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
@@ -205,9 +222,9 @@ div.csl-indent {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./draft-data-doc.html">Appendices</a></li><li class="breadcrumb-item"><a href="./draft-intro-conclusions.html"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Draft: Intro/Conclusions</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Appendix C — Draft: Intro/Conclusions</h1>
+<h1 class="title">Bridge Collapse Risk Assessment in Omaha, Nebraska</h1>
 </div>
 
 
@@ -224,14 +241,103 @@ div.csl-indent {
 </header>
 
 
-<section id="introduction" class="level1 unnumbered">
-<h1 class="unnumbered">Introduction</h1>
+<section id="introduction" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Bridge safety has become more of a concern in the United States after several bridge collapses in recent years. One example is the 2022 Pittsburgh bridge collapse <span class="citation" data-cites="bridge_collapse">(<a href="references.html#ref-bridge_collapse" role="doc-biblioref"><span>“Maintenance and <span>Oversight Failures Led</span> to 2022 <span>Pittsburgh Bridge Collapse</span>”</span> n.d.</a>)</span>. Events like this have caused cities to pay more attention to the condition and safety of their bridges.</p>
 <p>In Omaha, bridges are important for everyday travel, especially on major roads like I-80 and routes that cross the Missouri River. If a bridge were to fail, it could lead to serious safety issues and major traffic problems.</p>
 <p>The goal of this report is to estimate the risk of bridge collapse in Omaha over the next five years. This is done by analyzing bridge condition, age, and traffic levels using publicly available data. The results are meant to help the city identify higher risk bridges and understand what actions can be taken to reduce that risk.</p>
 </section>
-<section id="conclusion" class="level1 unnumbered">
-<h1 class="unnumbered">Conclusion</h1>
+<section id="methods" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="methods">Methods</h2>
+<p>This analysis primarily uses data from the National Bridge Inventory <span class="citation" data-cites="fhwa_nbi">(<a href="references.html#ref-fhwa_nbi" role="doc-biblioref"><span>“Download <span>NBI ASCII</span> Files - <span>National Bridge Inventory</span> - <span>Bridge Inspection</span> - <span>Safety Inspection</span> - <span>Bridges</span> &amp; <span>Structures</span> - <span>Federal Highway Administration</span>”</span> n.d.</a>)</span> and Federal Highway Administration traffic data <span class="citation" data-cites="fhwa_stats">(<a href="references.html#ref-fhwa_stats" role="doc-biblioref"><span>“Highway <span>Statistics</span> 2023 - <span>Policy</span> <span>Federal Highway Administration</span>”</span> n.d.</a>)</span>. Additional information from Nebraska Department of Transportation reports <span class="citation" data-cites="ndot_bridge">(<a href="references.html#ref-ndot_bridge" role="doc-biblioref"><span>“Bridge - <span>NDOT</span>”</span> n.d.</a>)</span> is used to provide context for maintenance and repair decisions.</p>
+<p>Only bridges located in Douglas County, Nebraska, which includes Omaha, were included in the analysis. Bridges with missing structural condition ratings were excluded to ensure consistent results.</p>
+<p>The variables used in this analysis are shown in <a href="draft-data-doc.html#tbl-nbi" class="quarto-xref">Table&nbsp;<span>A.1</span></a>, <a href="draft-data-doc.html#tbl-ndot" class="quarto-xref">Table&nbsp;<span>A.2</span></a>, and <a href="draft-data-doc.html#tbl-traffic" class="quarto-xref">Table&nbsp;<span>A.3</span></a>. The main variables include bridge age, deck rating, superstructure rating, substructure rating, lowest condition rating, bridge condition, and average daily traffic.</p>
+<p>Bridge age was calculated using the year built. Bridge condition was measured using deck, superstructure, and substructure ratings. A bridge was classified as being in poorer condition if its lowest condition rating was 4 or below.</p>
+<p>To estimate the probability of failure, bridges with lower condition ratings were treated as higher risk. To estimate the consequences of failure, average daily traffic was used as the measure of impact, with higher traffic indicating greater potential disruption.</p>
+<p>Overall bridge risk was estimated using the formula:</p>
+<p><strong>Risk = Probability of Failure × Consequences of Failure</strong></p>
+<p>This approach was used to identify bridges that may require additional monitoring or maintenance.</p>
+</section>
+<section id="results" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="results">Results</h2>
+<section id="data-characteristics" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="data-characteristics">Data Characteristics</h3>
+<p>The data set includes 511 bridges in the Omaha (Douglas County) area. The average bridge age is about 45 years, showing a mix of older and newer structures. Most bridges have condition ratings that fall within fair to good categories.</p>
+<p>Out of the 511 bridges analyzed, 16 bridges have a condition rating of 4 or below, indicating poorer condition. This represents about 3% of all bridges, suggesting that most bridges are not currently in poor condition.</p>
+<p>Traffic levels vary across bridges. Some carry only a small number of vehicles per day, while others carry over 100,000 vehicles per day, especially on major highways.</p>
+<hr>
+</section>
+<section id="primary-analysis-probability-of-failure" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="primary-analysis-probability-of-failure">Primary Analysis: Probability of Failure</h3>
+<p>The analysis shows that bridges with lower condition ratings have a higher risk of failure. Bridges with a lowest condition rating of 4 or below were identified as higher risk bridges.</p>
+<p>The results also show that older bridges tend to have lower condition ratings. This suggests that bridge condition declines over time due to wear and usage. While most bridges are still in acceptable condition, there is a small group of bridges with lower ratings that may be at higher risk.</p>
+<hr>
+</section>
+<section id="secondary-analysis-consequences-of-failure" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="secondary-analysis-consequences-of-failure">Secondary Analysis: Consequences of Failure</h3>
+<p>Traffic data shows that bridges with higher daily traffic would cause the largest disruptions if they failed. Bridges that carry very high traffic volumes, especially on major roads like I-80, would have the greatest impact on transportation and public safety.</p>
+<p>Information from NDOT <span class="citation" data-cites="ndot_bridge">(<a href="references.html#ref-ndot_bridge" role="doc-biblioref"><span>“Bridge - <span>NDOT</span>”</span> n.d.</a>)</span> provides context on maintenance and planned repairs, which may help reduce short-term risk. However, bridges that have both high traffic and low condition ratings represent the highest overall risk.</p>
+<p>These higher risk bridges are typically located along major transportation routes in Omaha. Since these routes are heavily used, a failure in these areas would cause major traffic disruptions and safety concerns.</p>
+<hr>
+</section>
+<section id="calculation-of-bridge-risk" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="calculation-of-bridge-risk">Calculation of Bridge Risk</h3>
+<p>Overall bridge risk combines the probability of failure and the consequences of failure:</p>
+<p><strong>Risk = Probability of Failure × Consequence of Failure</strong></p>
+<p>As shown in <a href="draft-results.html#fig-risk" class="quarto-xref">Figure&nbsp;<span>B.1</span></a>, bridge condition is used to estimate failure risk, and traffic data is used to estimate the impact of a failure.</p>
+<div id="fig-risk" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-risk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+A["Condition"] --&gt; B["Failure Risk"]
+C["Traffic"] --&gt; D["Impact"]
+B --&gt; E["Overall Risk"]
+D --&gt; E
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-risk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Shows how bridge risk is calculated using condition and traffic data.
+</figcaption>
+</figure>
+</div>
+<section id="key-findings" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="key-findings">Key Findings</h4>
+<ul>
+<li>Most bridges in Omaha are in <strong>fair to good condition</strong></li>
+<li>Only <strong>16 out of 511 bridges (~3%)</strong> are in poorer condition and may need monitoring or repair</li>
+<li><strong>Older bridges tend to have lower condition ratings</strong>, showing gradual deterioration</li>
+<li>Bridges with <strong>high traffic volumes</strong> would cause the biggest disruptions if they failed</li>
+<li>Bridges with <strong>both low condition ratings and high traffic</strong> represent the highest risk</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Conclusion</strong></p>
+<p>Overall, widespread bridge failure in Omaha is unlikely. However, targeted monitoring and maintenance of the small number of lower-rated bridges is recommended over the next five years to reduce overall risk.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="conclusion" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>The results show that most bridges in Omaha are in fair to good condition, with only 16 out of 511 bridges having a condition rating of 4 or below, which ends up being around 3%. This means the overall risk of a bridge collapse is low, but there are still some bridges that may need attention.</p>
 <p>The data also shows that older bridges tend to have lower condition ratings, and bridges with higher traffic would cause the biggest problems if a failure occurred. Due to this, bridges that are both older and heavily used represent the highest risk.</p>
 <p>Based on these findings, the city should focus on monitoring bridges with lower ratings more closely, prioritize repairs for these structures, and continue regular inspections. These actions would help reduce both the chance of failure and the impact if one occurs.</p>
@@ -239,6 +345,15 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-ndot_bridge" class="csl-entry" role="listitem">
+<span>“Bridge - <span>NDOT</span>.”</span> n.d. Accessed February 19, 2026. <a href="https://dot.nebraska.gov/business-center/bridge/">https://dot.nebraska.gov/business-center/bridge/</a>.
+</div>
+<div id="ref-fhwa_nbi" class="csl-entry" role="listitem">
+<span>“Download <span>NBI ASCII</span> Files - <span>National Bridge Inventory</span> - <span>Bridge Inspection</span> - <span>Safety Inspection</span> - <span>Bridges</span> &amp; <span>Structures</span> - <span>Federal Highway Administration</span>.”</span> n.d. Accessed February 19, 2026. <a href="https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm">https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm</a>.
+</div>
+<div id="ref-fhwa_stats" class="csl-entry" role="listitem">
+<span>“Highway <span>Statistics</span> 2023 - <span>Policy</span> <span>Federal Highway Administration</span>.”</span> n.d. Accessed February 19, 2026. <a href="https://www.fhwa.dot.gov/policyinformation/statistics/2023/">https://www.fhwa.dot.gov/policyinformation/statistics/2023/</a>.
+</div>
 <div id="ref-bridge_collapse" class="csl-entry" role="listitem">
 <span>“Maintenance and <span>Oversight Failures Led</span> to 2022 <span>Pittsburgh Bridge Collapse</span>.”</span> n.d. Accessed April 17, 2026. <a href="https://www.ntsb.gov/news/press-releases/Pages/NR20240221.aspx">https://www.ntsb.gov/news/press-releases/Pages/NR20240221.aspx</a>.
 </div>
@@ -648,13 +763,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./draft-results.html" class="pagination-link" aria-label="Draft: Results">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Draft: Results</span></span>
+      <a href="./Data-Documentation.html" class="pagination-link" aria-label="Data Documentation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Data Documentation</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./draft-exec-summary.html" class="pagination-link" aria-label="Draft: Executive Summary">
-        <span class="nav-page-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Draft: Executive Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

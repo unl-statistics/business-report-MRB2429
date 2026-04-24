@@ -1,6 +1,4 @@
----
-title: "Draft: Executive Summary"
----
+# Executive Summary {.unnumbered}
 
 This report evaluates the risk of a bridge collapsing in Omaha, Nebraska over the next five years. The goal is to help city decision makers understand current risks and identify actions that can reduce those risks.
 
