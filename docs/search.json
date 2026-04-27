@@ -263,5 +263,45 @@
     "crumbs": [
       "Bridge Collapse Risk Assessment in Omaha, Nebraska"
     ]
+  },
+  {
+    "objectID": "Data-Documentation.html",
+    "href": "Data-Documentation.html",
+    "title": "Data Documentation",
+    "section": "",
+    "text": "Goal\nThe goal of this report is to estimate the risk of a bridge collapse in Omaha, Nebraska over the next five years.\nRisk = Probability of failure × Consequence of failure",
+    "crumbs": [
+      "Data Documentation"
+    ]
+  },
+  {
+    "objectID": "Data-Documentation.html#important-variables",
+    "href": "Data-Documentation.html#important-variables",
+    "title": "Data Documentation",
+    "section": "Important Variables",
+    "text": "Important Variables\n\n\n\n\nTable 1: Variables used from the National Bridge Inventory dataset.\n\n\n\n\n\n\n\n\n\n\n\nVariable\nData_Type\nDescription\n\n\n\n\nYear Built\nNumeric\nUsed to calculate bridge age\n\n\nDeck Rating\nOrdinal (0–9)\nCondition of the bridge deck\n\n\nSuperstructure Rating\nOrdinal (0–9)\nCondition of load-bearing structure\n\n\nSubstructure Rating\nOrdinal (0–9)\nCondition of bridge supports\n\n\nLowest Rating\nOrdinal (0–9)\nLowest condition rating among major bridge parts\n\n\nBridge Condition\nCategorical\nOverall condition category such as Good, Fair, or Poor\n\n\nAverage Daily Traffic\nNumeric\nVehicles per day\n\n\n\n\n\n\n\n\nThese variables help show the condition of each bridge. Lower condition ratings indicate a greater chance of structural problems. Bridge age is also an important factor because older bridges are more likely to show wear over time.\nThere is a possible issue with missing data in the dataset. Some bridges may not have complete ratings for every condition measure. If data is missing, those bridges will either be removed from the analysis or reviewed carefully so the results are not misleading.",
+    "crumbs": [
+      "Data Documentation"
+    ]
+  },
+  {
+    "objectID": "Data-Documentation.html#important-variables-1",
+    "href": "Data-Documentation.html#important-variables-1",
+    "title": "Data Documentation",
+    "section": "Important Variables",
+    "text": "Important Variables\n\n\n\n\nTable 2: Variables used from Nebraska Department of Transportation bridge data.\n\n\n\n\n\n\n\n\n\n\n\nVariable\nData_Type\nDescription\n\n\n\n\nPlanned Repairs\nCategorical (Yes/No)\nShows whether repairs are scheduled\n\n\nFunding Levels\nNumeric\nShows maintenance investment\n\n\n\n\n\n\n\n\nThis source is useful because a bridge with planned repairs or available funding may have lower short term risk than a bridge with no repair plans. It also helps add more local context that may not be fully shown in the national bridge inventory data.",
+    "crumbs": [
+      "Data Documentation"
+    ]
+  },
+  {
+    "objectID": "Data-Documentation.html#important-variables-2",
+    "href": "Data-Documentation.html#important-variables-2",
+    "title": "Data Documentation",
+    "section": "Important Variables",
+    "text": "Important Variables\n\n\n\n\nTable 3: Variables used from FHWA traffic data.\n\n\n\n\n\n\n\n\n\n\n\nVariable\nData_Type\nDescription\n\n\n\n\nAverage Annual Daily Traffic (AADT)\nNumeric\nVehicles per day\n\n\nTruck Percentage\nNumeric (%)\nPercentage of trucks in traffic\n\n\n\n\n\n\n\n\nThis data helps show how serious the consequences would be if a bridge collapsed. A bridge that carries a high amount of traffic, especially truck traffic, would more likely cause more problems.",
+    "crumbs": [
+      "Data Documentation"
+    ]
   }
 ]
