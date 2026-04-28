@@ -1,0 +1,68 @@
+# Results {#sec-results}
+
+## Data
+
+
+The data set includes 511 bridges in the Omaha (Douglas County) area.
+The average bridge age is about 45 years, showing a mix of older and newer structures.
+
+<!-- This is a great place for a histogram of bridge age -->
+
+Most bridges have condition ratings that fall within fair to good categories.
+
+Out of the 511 bridges analyzed, 16 bridges have a condition rating of 4 or below, indicating poorer condition. This represents about 3% of all bridges, suggesting that most bridges are not currently in poor condition.
+
+Traffic levels vary across bridges. Some carry only a small number of vehicles per day, while others carry over 100,000 vehicles per day, especially on major highways.
+
+<!-- Again, this is a good place for a plot! -->
+
+
+## Probability of Failure
+
+
+
+The analysis shows that bridges with lower condition ratings have a higher risk of failure. Bridges with a lowest condition rating of 4 or below were identified as higher risk bridges.
+
+The results also show that older bridges tend to have lower condition ratings. This suggests that bridge condition declines over time due to wear and usage. While most bridges are still in acceptable condition, there is a small group of bridges with lower ratings that may be at higher risk.
+
+## Consequences of Failure
+
+
+Traffic data shows that bridges with higher daily traffic would cause the largest disruptions if they failed. Bridges that carry very high traffic volumes, especially on major roads like I-80, would have the greatest impact on transportation and public safety.
+
+Information from NDOT [@ndot_bridge] provides context on maintenance and planned repairs, which may help reduce short-term risk. However, bridges that have both high traffic and low condition ratings represent the highest overall risk.
+
+These higher risk bridges are typically located along major transportation routes in Omaha. Since these routes are heavily used, a failure in these areas would cause major traffic disruptions and safety concerns.
+
+<!-- Show the data via a plot -->
+
+### Calculation of Bridge Risk
+
+Overall bridge risk combines the probability of failure and the consequences of failure:
+
+**Risk = Probability of Failure × Consequence of Failure**
+
+As shown in @fig-risk, bridge condition is used to estimate failure risk, and traffic data is used to estimate the impact of a failure.
+
+::: {#fig-risk}
+
+```{mermaid}
+flowchart TD
+A["Condition"] --> B["Failure Risk"]
+C["Traffic"] --> D["Impact"]
+B --> E["Overall Risk"]
+D --> E
+```
+
+Shows how bridge risk is calculated using condition and traffic data.
+
+:::
+
+
+#### Key Findings
+
+- Most bridges in Omaha are in **fair to good condition**
+- Only **16 out of 511 bridges (~3%)** are in poorer condition and may need monitoring or repair
+- **Older bridges tend to have lower condition ratings**, showing gradual deterioration
+- Bridges with **high traffic volumes** would cause the biggest disruptions if they failed
+- Bridges with **both low condition ratings and high traffic** represent the highest risk

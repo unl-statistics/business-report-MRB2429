@@ -1,49 +1,20 @@
-# Preface {.unnumbered}
+# Executive Summary {.unnumbered}
 
-You are a data scientist for a mid-sized business, in a small group of 3-4 data scientists. You've been tasked with creating a report evaluating a scenario for your business. 
-Your colleagues will also be evaluating the same scenario, and your reports will be used in aggregate to determine a consensus (or lack thereof) on the company's action. 
-The reports will also be used to inform downsizing that is rumored to be coming - you want to ensure your report is better than your peers so that you aren't as easy to cut. 
+This report evaluates the risk of a bridge collapsing in Omaha, Nebraska over the next five years. The goal is to help city decision makers understand current risks and identify actions that can reduce those risks.
 
-You may talk to your peers who are assigned the same scenario, but you do not want to collaborate too closely, lest you both become targets of the rumored layoffs. 
+Data from the National Bridge Inventory and federal traffic statistics were used to analyze bridge condition, age, and traffic levels. Information from the Nebraska Department of Transportation was used to provide additional context on maintenance. Risk was defined as a combination of the probability of failure and the consequences if a failure occurs.
 
+The analysis shows that most bridges in Omaha are currently in fair to good condition. Out of 511 bridges, only 16 have a condition rating of 4 or below, meaning they may be at higher risk. Older bridges were more likely to have lower condition ratings, suggesting that deterioration over time is an important factor.
 
----
+Traffic data shows that some bridges carry significantly higher volumes of vehicles than others. If one of these high traffic bridges were to fail, it would cause major disruptions and potential safety issues. Bridges with both low condition ratings and high traffic levels represent the greatest overall risk.
 
-I've scaffolded this report for you to make this process easier - as we talk about different sections of a report in class and read about how to create similar sections, you will practice by writing the equivalent section of your report.
+Overall, the risk of widespread bridge failure in Omaha is low. However, a small number of bridges require additional attention to prevent future problems.
 
+### Recommendations {.unnumbered}
 
-The basic steps for this task are as follows:
+- Increase monitoring of older bridges with low condition ratings  
+- Prioritize repairs for bridges in poorer condition  
+- Continue regular inspections and maintenance  
+- Focus on high-traffic bridges where failure would have the greatest impact  
 
-- Identify the research question from the business question
-
-- Identify data set(s) which are (1) publicly available (you don't have a budget to pay for private data) and (2) relevant to your task
-
-    - (HW Week 6) Document your data sets in `draft-data-doc.qmd`
-
-- Conduct a statistical analysis to support your answer to your research and business questions
-
-    - Write a methods section for your business report corresponding to your statistical analysis
-
-    - (HW Week 9) Draft of results section of business report with relevant graphics/visual aids in `draft-results.qmd`
-    
-- Write your report
-
-    - (HW Week 10) Draft of Intro/Conclusion sections in `draft-intro-conclusions.qmd`
-    
-    - (HW Week 11) Draft of Executive summary section in `draft-exec-summary.qmd`
-    
-- Revise your report
-
-    - (HW Week 12 -- not turned in) Revise your report
-    
-    - (HW Week 13) - Rough draft of report due. Create one or more qmd files for your report (you can overwrite or delete intro.qmd and summary.qmd), include the names of each file (in order) in `_quarto.yml`. You should use references (edit references.bib and use pandoc citations). Make sure your report compiles and looks reasonable in both html and pdf. 
-    
-    - Develop a presentation to go along with your report (Week 13). Create slides for your report using quarto. 
-
-- Peer revise reports
-
-    - Peer revise reports
-    
-    - (HW Week 14) - Make edits to your report from comments received from peer review
-
-- Final report & presentation due
+Taking these steps will help reduce the chance of bridge failure and limit the impact if a failure occurs.

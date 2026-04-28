@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Appendix D — Draft: Executive Summary – Evaluation of </title>
+<title>3&nbsp; Results – Evaluation of &lt;scenario&gt;</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -20,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,18 +52,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./draft-intro-conclusions.html" rel="prev">
+<link href="./Conclusion.html" rel="next">
+<link href="./methods.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-cad2a2f8a56dfe71ee895a68e79c9b9a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c128cb1994ebca371d7534d4c46f011c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9b419fb078a05ce855a1a5796e76eb89.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,6 +91,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -82,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./draft-data-doc.html">Appendices</a></li><li class="breadcrumb-item"><a href="./draft-exec-summary.html"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Draft: Executive Summary</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./results.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Results</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -110,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Executive Summary</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -121,8 +146,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  <a href="./methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Methods</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./results.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Results</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -131,41 +168,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">References</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./draft-data-doc.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Draft: Data Documentation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./draft-results.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Draft: Results</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./draft-intro-conclusions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Draft: Intro/Conclusions</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./draft-exec-summary.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Draft: Executive Summary</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
@@ -176,16 +178,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#recommendations" id="toc-recommendations" class="nav-link active" data-scroll-target="#recommendations">Recommendations</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link active" data-scroll-target="#data"><span class="header-section-number">3.1</span> Data</a></li>
+  <li><a href="#probability-of-failure" id="toc-probability-of-failure" class="nav-link" data-scroll-target="#probability-of-failure"><span class="header-section-number">3.2</span> Probability of Failure</a></li>
+  <li><a href="#consequences-of-failure" id="toc-consequences-of-failure" class="nav-link" data-scroll-target="#consequences-of-failure"><span class="header-section-number">3.3</span> Consequences of Failure</a>
+  <ul class="collapse">
+  <li><a href="#calculation-of-bridge-risk" id="toc-calculation-of-bridge-risk" class="nav-link" data-scroll-target="#calculation-of-bridge-risk"><span class="header-section-number">3.3.1</span> Calculation of Bridge Risk</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./draft-data-doc.html">Appendices</a></li><li class="breadcrumb-item"><a href="./draft-exec-summary.html"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Draft: Executive Summary</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Appendix D — Draft: Executive Summary</h1>
+<h1 class="title"><span id="sec-results" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Results</span></span></h1>
 </div>
 
 
@@ -202,25 +209,74 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This report evaluates the risk of a bridge collapsing in Omaha, Nebraska over the next five years. The goal is to help city decision makers understand current risks and identify actions that can reduce those risks.</p>
-<p>Data from the National Bridge Inventory and federal traffic statistics were used to analyze bridge condition, age, and traffic levels. Information from the Nebraska Department of Transportation was used to provide additional context on maintenance. Risk was defined as a combination of the probability of failure and the consequences if a failure occurs.</p>
-<p>The analysis shows that most bridges in Omaha are currently in fair to good condition. Out of 511 bridges, only 16 have a condition rating of 4 or below, meaning they may be at higher risk. Older bridges were more likely to have lower condition ratings, suggesting that deterioration over time is an important factor.</p>
-<p>Traffic data shows that some bridges carry significantly higher volumes of vehicles than others. If one of these high traffic bridges were to fail, it would cause major disruptions and potential safety issues. Bridges with both low condition ratings and high traffic levels represent the greatest overall risk.</p>
-<p>Overall, the risk of widespread bridge failure in Omaha is low. However, a small number of bridges require additional attention to prevent future problems.</p>
-<section id="recommendations" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="recommendations">Recommendations</h3>
+<section id="data" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="data"><span class="header-section-number">3.1</span> Data</h2>
+<p>The data set includes 511 bridges in the Omaha (Douglas County) area. The average bridge age is about 45 years, showing a mix of older and newer structures.</p>
+<!-- This is a great place for a histogram of bridge age -->
+<p>Most bridges have condition ratings that fall within fair to good categories.</p>
+<p>Out of the 511 bridges analyzed, 16 bridges have a condition rating of 4 or below, indicating poorer condition. This represents about 3% of all bridges, suggesting that most bridges are not currently in poor condition.</p>
+<p>Traffic levels vary across bridges. Some carry only a small number of vehicles per day, while others carry over 100,000 vehicles per day, especially on major highways.</p>
+<!-- Again, this is a good place for a plot! -->
+</section>
+<section id="probability-of-failure" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="probability-of-failure"><span class="header-section-number">3.2</span> Probability of Failure</h2>
+<p>The analysis shows that bridges with lower condition ratings have a higher risk of failure. Bridges with a lowest condition rating of 4 or below were identified as higher risk bridges.</p>
+<p>The results also show that older bridges tend to have lower condition ratings. This suggests that bridge condition declines over time due to wear and usage. While most bridges are still in acceptable condition, there is a small group of bridges with lower ratings that may be at higher risk.</p>
+</section>
+<section id="consequences-of-failure" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="consequences-of-failure"><span class="header-section-number">3.3</span> Consequences of Failure</h2>
+<p>Traffic data shows that bridges with higher daily traffic would cause the largest disruptions if they failed. Bridges that carry very high traffic volumes, especially on major roads like I-80, would have the greatest impact on transportation and public safety.</p>
+<p>Information from NDOT <span class="citation" data-cites="ndot_bridge">(<a href="references.html#ref-ndot_bridge" role="doc-biblioref"><em>Bridge - <span>NDOT</span></em>, n.d.</a>)</span> provides context on maintenance and planned repairs, which may help reduce short-term risk. However, bridges that have both high traffic and low condition ratings represent the highest overall risk.</p>
+<p>These higher risk bridges are typically located along major transportation routes in Omaha. Since these routes are heavily used, a failure in these areas would cause major traffic disruptions and safety concerns.</p>
+<p>&lt;!– Show the data via a plot</p>
+<section id="calculation-of-bridge-risk" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="calculation-of-bridge-risk"><span class="header-section-number">3.3.1</span> Calculation of Bridge Risk</h3>
+<p>Overall bridge risk combines the probability of failure and the consequences of failure:</p>
+<p><strong>Risk = Probability of Failure × Consequence of Failure</strong></p>
+<p>As shown in <a href="#fig-risk" class="quarto-xref">Figure&nbsp;<span>3.1</span></a>, bridge condition is used to estimate failure risk, and traffic data is used to estimate the impact of a failure.</p>
+<div id="fig-risk" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-risk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+A["Condition"] --&gt; B["Failure Risk"]
+C["Traffic"] --&gt; D["Impact"]
+B --&gt; E["Overall Risk"]
+D --&gt; E
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-risk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Shows how bridge risk is calculated using condition and traffic data.
+</figcaption>
+</figure>
+</div>
+<section id="key-findings" class="level4" data-number="3.3.1.1">
+<h4 data-number="3.3.1.1" class="anchored" data-anchor-id="key-findings"><span class="header-section-number">3.3.1.1</span> Key Findings</h4>
 <ul>
-<li>Increase monitoring of older bridges with low condition ratings<br>
-</li>
-<li>Prioritize repairs for bridges in poorer condition<br>
-</li>
-<li>Continue regular inspections and maintenance<br>
-</li>
-<li>Focus on high-traffic bridges where failure would have the greatest impact</li>
+<li>Most bridges in Omaha are in <strong>fair to good condition</strong></li>
+<li>Only <strong>16 out of 511 bridges (~3%)</strong> are in poorer condition and may need monitoring or repair</li>
+<li><strong>Older bridges tend to have lower condition ratings</strong>, showing gradual deterioration</li>
+<li>Bridges with <strong>high traffic volumes</strong> would cause the biggest disruptions if they failed</li>
+<li>Bridges with <strong>both low condition ratings and high traffic</strong> represent the highest risk</li>
 </ul>
-<p>Taking these steps will help reduce the chance of bridge failure and limit the impact if a failure occurs.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-ndot_bridge" class="csl-entry" role="listitem">
+<em>Bridge - <span>NDOT</span></em>. n.d. Accessed February 19, 2026. <a href="https://dot.nebraska.gov/business-center/bridge/">https://dot.nebraska.gov/business-center/bridge/</a>.
+</div>
+</div>
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -626,11 +682,14 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./draft-intro-conclusions.html" class="pagination-link" aria-label="Draft: Intro/Conclusions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Draft: Intro/Conclusions</span></span>
+      <a href="./methods.html" class="pagination-link" aria-label="Methods">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Methods</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./Conclusion.html" class="pagination-link" aria-label="Conclusion">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conclusion</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
