@@ -20,9 +20,19 @@ omaha_bridges_clean <- omaha_raw |>
 
 # Why This Matters
 
+:::: {.columns}
+
+::: {.column width="45%"}
 - Bridge failures have happened in the U.S.
 - Can cause serious safety issues
 - Can disrupt major traffic routes
+:::
+
+::: {.column width="55%"}
+![](PITTBridge.jpeg){width=100%}
+:::
+
+::::
 
 # What I’ll Cover
 
@@ -33,35 +43,51 @@ omaha_bridges_clean <- omaha_raw |>
 
 # Data Used
 
-- National Bridge Inventory (main dataset)
-- Traffic data (ADT)
-- NDOT (context only)
+- National Bridge Inventory (main data set)
+- Includes bridge condition and age
+- Traffic data used to measure impact
+- Nebraska Department of Transportation(NDOT) was used for additional context
 
-- 511 bridges analyzed
+- 511 bridges analyzed in Omaha
 
 # Key Variables
 
-- Bridge age
-- Condition ratings (0–9 scale)
-- Lowest condition rating
+- Bridge age (calculated from year built)
+- Condition ratings (scale from 0–9)
+- Lowest condition rating used for analysis
 - Traffic (vehicles per day)
 
-- Poor condition = rating ≤ 4
+- Poor condition defined as rating ≤ 4
 
 # Methods
 
-- Filtered to Omaha (Douglas County)
-- Removed missing data
+- Filtered data to Omaha (Douglas County)
+- Removed bridges with missing data
 - Calculated bridge age
-- Identified poor bridges
+- Identified bridges in poor condition
 
 **Risk = Probability × Consequence**
+
+- Condition ratings → probability of failure
+- Traffic → impact if failure occurs
+
+# Example of Cleaned Data
+
+```{r}
+#| echo: false
+
+library(knitr)
+
+kable(head(omaha_bridges_clean, 5))
+```
 
 # Data Characteristics
 
 - 511 bridges total
 - Average age ~45 years
 - Only 16 bridges in poor condition (~3%)
+
+Most bridges are still in fair to good condition
 
 # Bridge Condition Distribution
 
@@ -79,6 +105,7 @@ hist(omaha_bridges_clean$lowest_rating,
 
 - Lower condition rating = higher risk
 - Older bridges tend to have lower ratings
+- Shows deterioration over time
 - Most bridges are still in acceptable condition
 
 # Consequences of Failure
