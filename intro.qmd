@@ -1,0 +1,8 @@
+# Introduction
+
+
+Bridge safety has become more of a concern in the United States after several bridge collapses in recent years. One example is the 2022 Pittsburgh bridge collapse [@bridge_collapse]. Events like this have caused cities to pay more attention to the condition and safety of their bridges.
+
+In Omaha, bridges are important for everyday travel, especially on major roads like I-80 and routes that cross the Missouri River. If a bridge were to fail, it could lead to serious safety issues and major traffic problems.
+
+The goal of this report is to estimate the risk of bridge collapse in Omaha over the next five years. This is done by analyzing bridge condition, age, and traffic levels using publicly available data. The results are meant to help the city identify higher risk bridges and understand what actions can be taken to reduce that risk.

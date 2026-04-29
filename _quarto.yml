@@ -1,6 +1,8 @@
 project:
   type: book  
   output-dir: docs
+  post-render:
+    - ./compile-slides
 
 book:
   title: "Evaluation of <scenario>"
@@ -9,15 +11,12 @@ book:
     left: "Copyright 2025, Author Name"
   chapters:
     - index.qmd
-    - Executive-Summary.qmd
-    - Data-Documentation.qmd
-    - Business-Report.qmd
+    - intro.qmd
+    - methods.qmd
+    - results.qmd
+    - Conclusion.qmd
     - references.qmd
-  appendices:
-    - draft-data-doc.qmd
-    - draft-results.qmd
-    - draft-intro-conclusions.qmd
-    - draft-exec-summary.qmd
+
 
 bibliography: references.bib
 
