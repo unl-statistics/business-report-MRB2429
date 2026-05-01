@@ -46,7 +46,7 @@ summary_table <- data.frame(
 
 kable(summary_table)
 ```
-The summary statistics in @tbl-summary provide an overview of the Omaha bridge data set. A total of 511 bridges were included in the analysis, with an average age of approximately 45 years. Only 16 bridges, or about 3%, were classified as being in poor condition. These statistics indicate that most bridges are in acceptable condition, although a small subset may require additional attention.
+The summary statistics in @tbl-summary provide an overview of the Omaha bridge data set. A total of 511 bridges were included in the analysis, with an average age of approximately 40.7 years. Only 16 bridges, or about 3%, were classified as being in poor condition. These statistics indicate that most bridges are in acceptable condition, although a small subset may require additional attention.
 
 ```{r}
 #| echo: false
