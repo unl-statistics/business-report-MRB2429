@@ -1,10 +1,10 @@
 
 # Conclusion
 
-The results show that most bridges in Omaha are in fair to good condition, with only 16 out of 511 bridges having a condition rating of 4 or below, which ends up being around 3%. This means the overall risk of a bridge collapse is low, but there are still some bridges that may need attention.
+Most bridges in Omaha are in fair to good condition, with only 16 out of 511 bridges, or approximately 3%, classified as being in poor condition. This indicates that the overall risk of bridge failure is relatively low, although a small subset of bridges may require additional attention.
 
-The data also shows that older bridges tend to have lower condition ratings, and bridges with higher traffic would cause the biggest problems if a failure occurred. Due to this, bridges that are both older and heavily used represent the highest risk.
+Older bridges tend to have lower condition ratings, suggesting potential deterioration over time. In addition, bridges with higher traffic volumes would have greater consequences if a failure were to occur. As a result, bridges that combine lower condition ratings with high traffic volumes represent the highest overall risk.
 
-Based on these findings, the city should focus on monitoring bridges with lower ratings more closely, prioritize repairs for these structures, and continue regular inspections. These actions would help reduce both the chance of failure and the impact if one occurs.
+Based on these findings, the city should prioritize monitoring bridges with lower condition ratings, focus on repairs for these structures, and continue regular inspection and maintenance programs. These actions would help reduce both the likelihood of structural issues and the potential impact of a failure.
 
-While more detailed data could improve these estimates in the future, focusing on maintenance and monitoring is currently the best way to reduce the risk of a bridge collapse in Omaha over the next five years.
+While more detailed data could improve future assessments, continued monitoring and maintenance provide an effective approach for managing bridge risk in Omaha over the next five years.

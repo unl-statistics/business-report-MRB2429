@@ -1,18 +1,18 @@
 # Methods
 
+This analysis uses data from the National Bridge Inventory (NBI), filtered to include only bridges located in Douglas County, Nebraska, which also represents the Omaha area. Bridges with missing structural condition ratings were excluded from the analysis to avoid bias due to incomplete observations.
 
-This analysis primarily uses data from the National Bridge Inventory [@fhwa_nbi] and Federal Highway Administration traffic data [@fhwa_stats]. Additional information from Nebraska Department of Transportation reports [@ndot_bridge] is used to provide context for maintenance and repair decisions.
+The main variables used include bridge age, deck rating, superstructure rating, substructure rating, lowest condition rating, and average daily traffic (ADT). Bridge age was calculated using the year built.
 
-Only bridges located in Douglas County, Nebraska, which includes Omaha, were included in the analysis. Bridges with missing structural condition ratings were excluded to ensure consistent results.
+This analysis is descriptive and does not directly estimate the probability of bridge failure. Instead, bridge condition ratings are used as a proxy for relative failure risk. Bridges with lower condition ratings are treated as having higher risk, but this does not actually imply a specific probability of collapse.
 
-## Data
+To evaluate potential consequences of failure, average daily traffic was used as a measure of impact. Bridges with higher traffic volumes were considered to have greater potential consequences if a failure were to happen.
 
+The overall goal of this approach is to identify bridges that may require additional monitoring or maintenance by combining information about structural condition and traffic levels.
 
 ### National Bridge Inventory
 
-The data comes from the Federal Highway Administration's National Bridge Inventory [@fhwa_nbi]. This dataset provides information about bridge age, condition ratings, location, and traffic levels. The main variables used from this dataset are shown in @tbl-nbi.
-
-
+The data comes from the Federal Highway Administration's National Bridge Inventory [@fhwa_nbi]. This data set provides information about bridge age, condition ratings, location, and traffic levels. The main variables used from this data set are shown in @tbl-nbi.
 
 ```{r}
 #| echo: false
@@ -40,11 +40,11 @@ kable(
 )
 ```
 
-These variables help show the condition of each bridge. Lower condition ratings indicate a greater chance of structural problems. Bridge age is also an important factor because older bridges are more likely to show wear over time.
+The variables shown in @tbl-nbi provide information on bridge condition, age, and traffic levels. Lower condition ratings indicate a greater likelihood of structural deterioration. Bridge age is also an important factor because older bridges are more likely to show wear over time.
 
-There is a possible issue with missing data in the dataset. Some bridges may not have complete ratings for every condition measure. If data is missing, those bridges will either be removed from the analysis or reviewed carefully so the results are not misleading.
+There is a possible issue with missing data in the data set. Some bridges may not have complete ratings for every condition measure. If data is missing, those bridges will either be removed from the analysis or reviewed carefully so the results are not misleading.
 
-### Nebraska Department of Transportation {.unnumbered}
+### Nebraska Department of Transportation
 
 These state bridge reports are from NDOT [@ndot_bridge]. This source adds more local information about repairs and maintenance plans, which can help when looking at short term risk. The main variables used from this source are shown in @tbl-ndot.
 
@@ -63,13 +63,11 @@ kable(
 )
 ```
 
-This source is useful because a bridge with planned repairs or available funding may have lower short term risk than a bridge with no repair plans. It also helps add more local context that may not be fully shown in the national bridge inventory data.
+The variables in @tbl-ndot provide information on planned repairs and funding, which help interpret short-term maintenance needs.
 
 ### Traffic Data
 
-This is traffic data that comes from FHWA Highway Statistics. [@fhwa_stats]. This source is mainly used to help estimate the consequences of a bridge collapse instead of the probability of one actually happening.The main variables used from this source are shown in @tbl-traffic.
-
-#### Important Variables
+This is traffic data that comes from FHWA Highway Statistics [@fhwa_stats]. This source is mainly used to help estimate the consequences of a bridge collapse instead of the likelihood of failure. The main variables used from this source are shown in @tbl-traffic.
 
 ```{r}
 #| echo: false
@@ -86,13 +84,7 @@ kable(
 )
 ```
 
-@tbl-traffic helps show how serious the consequences would be if a bridge collapsed. A bridge that carries a high amount of traffic, especially truck traffic, would more likely cause more problems.
-
-### Is this enough data?
-
-I do think it is enough data. Each source provides me with different things that could help assess and prevent the bridge collapse risk in Omaha over the next five years. The NBI data provides the probability of a bridge collapsing. The NDOT data helps with local repair information, and the traffic data measure the impact. I think they work together very well.
-
-
+The data in @tbl-traffic provides a measure of the potential consequences of bridge failure. A bridge that carries a high volume of traffic, especially truck traffic, would more likely cause more problems.
 
 ## Selection of Relevant Variables
 
@@ -100,16 +92,18 @@ The variables used in this analysis are shown in @tbl-nbi, @tbl-ndot, and @tbl-t
 The main variables include bridge age, deck rating, superstructure rating, substructure rating, lowest condition rating, bridge condition, and average daily traffic.
 
 Bridge age was calculated using the year built.
+
 Bridge condition was measured using deck, superstructure, and substructure ratings.
+
 A bridge was classified as being in poorer condition if its lowest condition rating was 4 or below.
 
 ## Evaluating Risk
 
 
-To estimate the probability of failure, bridges with lower condition ratings were treated as higher risk. To estimate the consequences of failure, average daily traffic was used as the measure of impact, with higher traffic indicating greater potential disruption.
+To evaluate relative failure risk, bridges with lower condition ratings were treated as higher risk. To estimate the consequences of failure, average daily traffic was used as the measure of impact, with higher traffic indicating greater potential disruption.
 
 Overall bridge risk was estimated using the formula:
 
-**Risk = Probability of Failure × Consequences of Failure**
+**Risk = Relative Failure Risk × Consequences of Failure**
 
 This approach was used to identify bridges that may require additional monitoring or maintenance, as discussed in @sec-results.

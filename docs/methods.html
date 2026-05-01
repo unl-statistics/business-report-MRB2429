@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Methods – Evaluation of Bridges Collapsing in Omaha, Nebraska</title>
+<title>2&nbsp; Methods – Bridge Collapse Risk Assessment in Omaha, Nebraska</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,7 +118,7 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Evaluation of Bridges Collapsing in Omaha, Nebraska</a> 
+      <a href="./">Bridge Collapse Risk Assessment in Omaha, Nebraska</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -137,7 +137,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Executive Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -154,7 +154,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Conclusion.html" class="sidebar-item-text sidebar-link">
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
   </div>
 </li>
@@ -174,15 +174,11 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#data" id="toc-data" class="nav-link active" data-scroll-target="#data"><span class="header-section-number">2.1</span> Data</a>
-  <ul class="collapse">
-  <li><a href="#national-bridge-inventory" id="toc-national-bridge-inventory" class="nav-link" data-scroll-target="#national-bridge-inventory"><span class="header-section-number">2.1.1</span> National Bridge Inventory</a></li>
-  <li><a href="#nebraska-department-of-transportation" id="toc-nebraska-department-of-transportation" class="nav-link" data-scroll-target="#nebraska-department-of-transportation">Nebraska Department of Transportation</a></li>
-  <li><a href="#traffic-data" id="toc-traffic-data" class="nav-link" data-scroll-target="#traffic-data"><span class="header-section-number">2.1.2</span> Traffic Data</a></li>
-  <li><a href="#is-this-enough-data" id="toc-is-this-enough-data" class="nav-link" data-scroll-target="#is-this-enough-data"><span class="header-section-number">2.1.3</span> Is this enough data?</a></li>
-  </ul></li>
-  <li><a href="#selection-of-relevant-variables" id="toc-selection-of-relevant-variables" class="nav-link" data-scroll-target="#selection-of-relevant-variables"><span class="header-section-number">2.2</span> Selection of Relevant Variables</a></li>
-  <li><a href="#evaluating-risk" id="toc-evaluating-risk" class="nav-link" data-scroll-target="#evaluating-risk"><span class="header-section-number">2.3</span> Evaluating Risk</a></li>
+  <li><a href="#national-bridge-inventory" id="toc-national-bridge-inventory" class="nav-link active" data-scroll-target="#national-bridge-inventory"><span class="header-section-number">2.0.1</span> National Bridge Inventory</a></li>
+  <li><a href="#nebraska-department-of-transportation" id="toc-nebraska-department-of-transportation" class="nav-link" data-scroll-target="#nebraska-department-of-transportation"><span class="header-section-number">2.0.2</span> Nebraska Department of Transportation</a></li>
+  <li><a href="#traffic-data" id="toc-traffic-data" class="nav-link" data-scroll-target="#traffic-data"><span class="header-section-number">2.0.3</span> Traffic Data</a></li>
+  <li><a href="#selection-of-relevant-variables" id="toc-selection-of-relevant-variables" class="nav-link" data-scroll-target="#selection-of-relevant-variables"><span class="header-section-number">2.1</span> Selection of Relevant Variables</a></li>
+  <li><a href="#evaluating-risk" id="toc-evaluating-risk" class="nav-link" data-scroll-target="#evaluating-risk"><span class="header-section-number">2.2</span> Evaluating Risk</a></li>
   </ul>
 </nav>
     </div>
@@ -208,13 +204,14 @@ div.csl-indent {
 </header>
 
 
-<p>This analysis primarily uses data from the National Bridge Inventory <span class="citation" data-cites="fhwa_nbi">(<a href="references.html#ref-fhwa_nbi" role="doc-biblioref"><span>“Download <span>NBI ASCII</span> Files - <span>National Bridge Inventory</span> - <span>Bridge Inspection</span> - <span>Safety Inspection</span> - <span>Bridges</span> &amp; <span>Structures</span> - <span>Federal Highway Administration</span>”</span> n.d.</a>)</span> and Federal Highway Administration traffic data <span class="citation" data-cites="fhwa_stats">(<a href="references.html#ref-fhwa_stats" role="doc-biblioref"><span>“Highway <span>Statistics</span> 2023 - <span>Policy</span> <span>Federal Highway Administration</span>”</span> n.d.</a>)</span>. Additional information from Nebraska Department of Transportation reports <span class="citation" data-cites="ndot_bridge">(<a href="references.html#ref-ndot_bridge" role="doc-biblioref"><span>“Bridge - <span>NDOT</span>”</span> n.d.</a>)</span> is used to provide context for maintenance and repair decisions.</p>
-<p>Only bridges located in Douglas County, Nebraska, which includes Omaha, were included in the analysis. Bridges with missing structural condition ratings were excluded to ensure consistent results.</p>
-<section id="data" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="data"><span class="header-section-number">2.1</span> Data</h2>
-<section id="national-bridge-inventory" class="level3" data-number="2.1.1">
-<h3 data-number="2.1.1" class="anchored" data-anchor-id="national-bridge-inventory"><span class="header-section-number">2.1.1</span> National Bridge Inventory</h3>
-<p>The data comes from the Federal Highway Administration’s National Bridge Inventory <span class="citation" data-cites="fhwa_nbi">(<a href="references.html#ref-fhwa_nbi" role="doc-biblioref"><span>“Download <span>NBI ASCII</span> Files - <span>National Bridge Inventory</span> - <span>Bridge Inspection</span> - <span>Safety Inspection</span> - <span>Bridges</span> &amp; <span>Structures</span> - <span>Federal Highway Administration</span>”</span> n.d.</a>)</span>. This dataset provides information about bridge age, condition ratings, location, and traffic levels. The main variables used from this dataset are shown in <a href="#tbl-nbi" class="quarto-xref">Table&nbsp;<span>2.1</span></a>.</p>
+<p>This analysis uses data from the National Bridge Inventory (NBI), filtered to include only bridges located in Douglas County, Nebraska, which also represents the Omaha area. Bridges with missing structural condition ratings were excluded from the analysis to avoid bias due to incomplete observations.</p>
+<p>The main variables used include bridge age, deck rating, superstructure rating, substructure rating, lowest condition rating, and average daily traffic (ADT). Bridge age was calculated using the year built.</p>
+<p>This analysis is descriptive and does not directly estimate the probability of bridge failure. Instead, bridge condition ratings are used as a proxy for relative failure risk. Bridges with lower condition ratings are treated as having higher risk, but this does not actually imply a specific probability of collapse.</p>
+<p>To evaluate potential consequences of failure, average daily traffic was used as a measure of impact. Bridges with higher traffic volumes were considered to have greater potential consequences if a failure were to happen.</p>
+<p>The overall goal of this approach is to identify bridges that may require additional monitoring or maintenance by combining information about structural condition and traffic levels.</p>
+<section id="national-bridge-inventory" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="national-bridge-inventory"><span class="header-section-number">2.0.1</span> National Bridge Inventory</h3>
+<p>The data comes from the Federal Highway Administration’s National Bridge Inventory <span class="citation" data-cites="fhwa_nbi">(<a href="references.html#ref-fhwa_nbi" role="doc-biblioref">Federal Highway Administration 2025</a>)</span>. This data set provides information about bridge age, condition ratings, location, and traffic levels. The main variables used from this data set are shown in <a href="#tbl-nbi" class="quarto-xref">Table&nbsp;<span>2.1</span></a>.</p>
 <div class="cell">
 <div id="tbl-nbi" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -279,12 +276,12 @@ Table&nbsp;2.1: Variables used from the National Bridge Inventory dataset.
 </figure>
 </div>
 </div>
-<p>These variables help show the condition of each bridge. Lower condition ratings indicate a greater chance of structural problems. Bridge age is also an important factor because older bridges are more likely to show wear over time.</p>
-<p>There is a possible issue with missing data in the dataset. Some bridges may not have complete ratings for every condition measure. If data is missing, those bridges will either be removed from the analysis or reviewed carefully so the results are not misleading.</p>
+<p>The variables shown in <a href="#tbl-nbi" class="quarto-xref">Table&nbsp;<span>2.1</span></a> provide information on bridge condition, age, and traffic levels. Lower condition ratings indicate a greater likelihood of structural deterioration. Bridge age is also an important factor because older bridges are more likely to show wear over time.</p>
+<p>There is a possible issue with missing data in the data set. Some bridges may not have complete ratings for every condition measure. If data is missing, those bridges will either be removed from the analysis or reviewed carefully so the results are not misleading.</p>
 </section>
-<section id="nebraska-department-of-transportation" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="nebraska-department-of-transportation">Nebraska Department of Transportation</h3>
-<p>These state bridge reports are from NDOT <span class="citation" data-cites="ndot_bridge">(<a href="references.html#ref-ndot_bridge" role="doc-biblioref"><span>“Bridge - <span>NDOT</span>”</span> n.d.</a>)</span>. This source adds more local information about repairs and maintenance plans, which can help when looking at short term risk. The main variables used from this source are shown in <a href="#tbl-ndot" class="quarto-xref">Table&nbsp;<span>2.2</span></a>.</p>
+<section id="nebraska-department-of-transportation" class="level3" data-number="2.0.2">
+<h3 data-number="2.0.2" class="anchored" data-anchor-id="nebraska-department-of-transportation"><span class="header-section-number">2.0.2</span> Nebraska Department of Transportation</h3>
+<p>These state bridge reports are from NDOT <span class="citation" data-cites="ndot_bridge">(<a href="references.html#ref-ndot_bridge" role="doc-biblioref">Nebraska Department of Transportation n.d.</a>)</span>. This source adds more local information about repairs and maintenance plans, which can help when looking at short term risk. The main variables used from this source are shown in <a href="#tbl-ndot" class="quarto-xref">Table&nbsp;<span>2.2</span></a>.</p>
 <div class="cell">
 <div id="tbl-ndot" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -324,13 +321,11 @@ Table&nbsp;2.2: Variables used from Nebraska Department of Transportation bridge
 </figure>
 </div>
 </div>
-<p>This source is useful because a bridge with planned repairs or available funding may have lower short term risk than a bridge with no repair plans. It also helps add more local context that may not be fully shown in the national bridge inventory data.</p>
+<p>The variables in <a href="#tbl-ndot" class="quarto-xref">Table&nbsp;<span>2.2</span></a> provide information on planned repairs and funding, which help interpret short-term maintenance needs.</p>
 </section>
-<section id="traffic-data" class="level3" data-number="2.1.2">
-<h3 data-number="2.1.2" class="anchored" data-anchor-id="traffic-data"><span class="header-section-number">2.1.2</span> Traffic Data</h3>
-<p>This is traffic data that comes from FHWA Highway Statistics. <span class="citation" data-cites="fhwa_stats">(<a href="references.html#ref-fhwa_stats" role="doc-biblioref"><span>“Highway <span>Statistics</span> 2023 - <span>Policy</span> <span>Federal Highway Administration</span>”</span> n.d.</a>)</span>. This source is mainly used to help estimate the consequences of a bridge collapse instead of the probability of one actually happening.The main variables used from this source are shown in <a href="#tbl-traffic" class="quarto-xref">Table&nbsp;<span>2.3</span></a>.</p>
-<section id="important-variables" class="level4" data-number="2.1.2.1">
-<h4 data-number="2.1.2.1" class="anchored" data-anchor-id="important-variables"><span class="header-section-number">2.1.2.1</span> Important Variables</h4>
+<section id="traffic-data" class="level3" data-number="2.0.3">
+<h3 data-number="2.0.3" class="anchored" data-anchor-id="traffic-data"><span class="header-section-number">2.0.3</span> Traffic Data</h3>
+<p>This is traffic data that comes from FHWA Highway Statistics <span class="citation" data-cites="fhwa_stats">(<a href="references.html#ref-fhwa_stats" role="doc-biblioref"><span>“Highway <span>Statistics</span> 2023 - <span>Policy</span> <span>Federal Highway Administration</span>”</span> n.d.</a>)</span>. This source is mainly used to help estimate the consequences of a bridge collapse instead of the likelihood of failure. The main variables used from this source are shown in <a href="#tbl-traffic" class="quarto-xref">Table&nbsp;<span>2.3</span></a>.</p>
 <div class="cell">
 <div id="tbl-traffic" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -370,36 +365,32 @@ Table&nbsp;2.3: Variables used from FHWA traffic data.
 </figure>
 </div>
 </div>
-<p><a href="#tbl-traffic" class="quarto-xref">Table&nbsp;<span>2.3</span></a> helps show how serious the consequences would be if a bridge collapsed. A bridge that carries a high amount of traffic, especially truck traffic, would more likely cause more problems.</p>
+<p>The data in <a href="#tbl-traffic" class="quarto-xref">Table&nbsp;<span>2.3</span></a> provides a measure of the potential consequences of bridge failure. A bridge that carries a high volume of traffic, especially truck traffic, would more likely cause more problems.</p>
 </section>
-</section>
-<section id="is-this-enough-data" class="level3" data-number="2.1.3">
-<h3 data-number="2.1.3" class="anchored" data-anchor-id="is-this-enough-data"><span class="header-section-number">2.1.3</span> Is this enough data?</h3>
-<p>I do think it is enough data. Each source provides me with different things that could help assess and prevent the bridge collapse risk in Omaha over the next five years. The NBI data provides the probability of a bridge collapsing. The NDOT data helps with local repair information, and the traffic data measure the impact. I think they work together very well.</p>
-</section>
-</section>
-<section id="selection-of-relevant-variables" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="selection-of-relevant-variables"><span class="header-section-number">2.2</span> Selection of Relevant Variables</h2>
+<section id="selection-of-relevant-variables" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="selection-of-relevant-variables"><span class="header-section-number">2.1</span> Selection of Relevant Variables</h2>
 <p>The variables used in this analysis are shown in <a href="#tbl-nbi" class="quarto-xref">Table&nbsp;<span>2.1</span></a>, <a href="#tbl-ndot" class="quarto-xref">Table&nbsp;<span>2.2</span></a>, and <a href="#tbl-traffic" class="quarto-xref">Table&nbsp;<span>2.3</span></a>. The main variables include bridge age, deck rating, superstructure rating, substructure rating, lowest condition rating, bridge condition, and average daily traffic.</p>
-<p>Bridge age was calculated using the year built. Bridge condition was measured using deck, superstructure, and substructure ratings. A bridge was classified as being in poorer condition if its lowest condition rating was 4 or below.</p>
+<p>Bridge age was calculated using the year built.</p>
+<p>Bridge condition was measured using deck, superstructure, and substructure ratings.</p>
+<p>A bridge was classified as being in poorer condition if its lowest condition rating was 4 or below.</p>
 </section>
-<section id="evaluating-risk" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="evaluating-risk"><span class="header-section-number">2.3</span> Evaluating Risk</h2>
-<p>To estimate the probability of failure, bridges with lower condition ratings were treated as higher risk. To estimate the consequences of failure, average daily traffic was used as the measure of impact, with higher traffic indicating greater potential disruption.</p>
+<section id="evaluating-risk" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="evaluating-risk"><span class="header-section-number">2.2</span> Evaluating Risk</h2>
+<p>To evaluate relative failure risk, bridges with lower condition ratings were treated as higher risk. To estimate the consequences of failure, average daily traffic was used as the measure of impact, with higher traffic indicating greater potential disruption.</p>
 <p>Overall bridge risk was estimated using the formula:</p>
-<p><strong>Risk = Probability of Failure × Consequences of Failure</strong></p>
+<p><strong>Risk = Relative Failure Risk × Consequences of Failure</strong></p>
 <p>This approach was used to identify bridges that may require additional monitoring or maintenance, as discussed in <a href="results.html" class="quarto-xref"><span>Chapter 3</span></a>.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-ndot_bridge" class="csl-entry" role="listitem">
-<span>“Bridge - <span>NDOT</span>.”</span> n.d. Accessed February 19, 2026. <a href="https://dot.nebraska.gov/business-center/bridge/">https://dot.nebraska.gov/business-center/bridge/</a>.
-</div>
 <div id="ref-fhwa_nbi" class="csl-entry" role="listitem">
-<span>“Download <span>NBI ASCII</span> Files - <span>National Bridge Inventory</span> - <span>Bridge Inspection</span> - <span>Safety Inspection</span> - <span>Bridges</span> &amp; <span>Structures</span> - <span>Federal Highway Administration</span>.”</span> n.d. Accessed February 19, 2026. <a href="https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm">https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm</a>.
+Federal Highway Administration. 2025. <span>“National Bridge Inventory (NBI) Data, Nebraska, 2025.”</span> <a href="https://www.fhwa.dot.gov/bridge/nbi/2025/delimited/NE25.txt">https://www.fhwa.dot.gov/bridge/nbi/2025/delimited/NE25.txt</a>.
 </div>
 <div id="ref-fhwa_stats" class="csl-entry" role="listitem">
 <span>“Highway <span>Statistics</span> 2023 - <span>Policy</span> <span>Federal Highway Administration</span>.”</span> n.d. Accessed February 19, 2026. <a href="https://www.fhwa.dot.gov/policyinformation/statistics/2023/">https://www.fhwa.dot.gov/policyinformation/statistics/2023/</a>.
+</div>
+<div id="ref-ndot_bridge" class="csl-entry" role="listitem">
+Nebraska Department of Transportation. n.d. <span>“Nebraska Bridge Program and Bridge Division Resources.”</span> Accessed April 17, 2026. <a href="https://dot.nebraska.gov/business-center/bridge/">https://dot.nebraska.gov/business-center/bridge/</a>.
 </div>
 </div>
 </section>
@@ -807,8 +798,8 @@ Table&nbsp;2.3: Variables used from FHWA traffic data.
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./intro.html" class="pagination-link" aria-label="Executive Summary">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Executive Summary</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

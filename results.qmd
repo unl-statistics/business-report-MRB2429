@@ -1,48 +1,123 @@
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+library(dplyr)
+
+omaha_raw <- read.csv("omaha_sample.csv")
+
+omaha_bridges_clean <- omaha_raw |>
+  mutate(
+    bridge_age = 2026 - year_built,
+    lowest_rating = as.numeric(lowest_rating),
+    daily_traffic = as.numeric(daily_traffic),
+    poor_condition = lowest_rating <= 4
+  )
+```
+
 # Results {#sec-results}
 
 ## Data
 
+```{r}
+#| echo: false
+#| label: tbl-summary
+#| tbl-cap: "Summary statistics for Omaha bridges."
 
-The data set includes 511 bridges in the Omaha (Douglas County) area.
-The average bridge age is about 45 years, showing a mix of older and newer structures.
+library(dplyr)
+library(knitr)
 
-<!-- This is a great place for a histogram of bridge age -->
+summary_table <- data.frame(
+  Statistic = c(
+    "Number of bridges",
+    "Average bridge age",
+    "Poor-condition bridges",
+    "Percent poor condition",
+    "Maximum daily traffic"
+  ),
+  Value = c(
+    nrow(omaha_bridges_clean),
+    round(mean(omaha_bridges_clean$bridge_age, na.rm = TRUE), 1),
+    sum(omaha_bridges_clean$poor_condition, na.rm = TRUE),
+    paste0(round(mean(omaha_bridges_clean$poor_condition, na.rm = TRUE) * 100, 1), "%"),
+    max(omaha_bridges_clean$daily_traffic, na.rm = TRUE)
+  )
+)
 
-Most bridges have condition ratings that fall within fair to good categories.
+kable(summary_table)
+```
+The summary statistics in @tbl-summary provide an overview of the Omaha bridge data set. A total of 511 bridges were included in the analysis, with an average age of approximately 45 years. Only 16 bridges, or about 3%, were classified as being in poor condition. These statistics indicate that most bridges are in acceptable condition, although a small subset may require additional attention.
+
+```{r}
+#| echo: false
+#| label: fig-age
+#| fig-cap: "Distribution of bridge age in Omaha."
+
+hist(omaha_bridges_clean$bridge_age,
+     xlab = "Bridge Age (years)",
+     ylab = "Number of Bridges",
+     main = "Bridge Age Distribution")
+```
+
+The distribution of bridge age is shown in @fig-age. The data set includes both newer and older bridges, which supports using bridge age as part of the analysis.
+
+```{r}
+#| echo: false
+#| label: fig-condition
+#| fig-cap: "Distribution of bridge condition ratings."
+
+hist(omaha_bridges_clean$lowest_rating,
+     xlab = "Condition Rating",
+     ylab = "Number of Bridges",
+     main = "Bridge Condition Ratings")
+```
+
+The distribution of condition ratings is shown in @fig-condition, with most bridges falling into fair to good categories.
 
 Out of the 511 bridges analyzed, 16 bridges have a condition rating of 4 or below, indicating poorer condition. This represents about 3% of all bridges, suggesting that most bridges are not currently in poor condition.
 
-Traffic levels vary across bridges. Some carry only a small number of vehicles per day, while others carry over 100,000 vehicles per day, especially on major highways.
+Traffic levels vary widely across bridges, with some carrying only a small number of vehicles per day and others exceeding 100,000 vehicles per day.
 
-<!-- Again, this is a good place for a plot! -->
-
-
-## Probability of Failure
+## Relative Failure Risk
 
 
+Bridges with lower condition ratings are identified as having higher relative failure risk based on the classification used in this analysis. Bridges with a lowest condition rating of 4 or below were identified as higher risk bridges.
 
-The analysis shows that bridges with lower condition ratings have a higher risk of failure. Bridges with a lowest condition rating of 4 or below were identified as higher risk bridges.
-
-The results also show that older bridges tend to have lower condition ratings. This suggests that bridge condition declines over time due to wear and usage. While most bridges are still in acceptable condition, there is a small group of bridges with lower ratings that may be at higher risk.
+Older bridges tend to have lower condition ratings, suggesting potential deterioration over time due to wear and usage. While most bridges are still in acceptable condition, there is a small group of bridges with lower ratings that may be at higher risk.
 
 ## Consequences of Failure
 
+```{r}
+#| echo: false
+#| label: fig-risk-scatter
+#| fig-cap: "Relationship between bridge condition and traffic volume."
 
-Traffic data shows that bridges with higher daily traffic would cause the largest disruptions if they failed. Bridges that carry very high traffic volumes, especially on major roads like I-80, would have the greatest impact on transportation and public safety.
+plot(
+  omaha_bridges_clean$lowest_rating,
+  omaha_bridges_clean$daily_traffic,
+  xlab = "Condition Rating",
+  ylab = "Daily Traffic",
+  main = "Condition vs Traffic"
+)
+```
 
-Information from NDOT [@ndot_bridge] provides context on maintenance and planned repairs, which may help reduce short-term risk. However, bridges that have both high traffic and low condition ratings represent the highest overall risk.
+The relationship between bridge condition and traffic volume is shown in @fig-risk-scatter. Bridges with both lower condition ratings and higher traffic volumes represent the highest overall risk, as they combine structural concern with greater potential impact.
+
+Bridges with higher daily traffic volumes would result in the largest disruptions if a failure were to occur. Bridges that carry very high traffic volumes, especially on major roads like I-80, would have the greatest impact on transportation and public safety.
+
+Information from NDOT [@ndot_bridge] provides context on maintenance and planned repairs, which may help reduce short-term risk.
 
 These higher risk bridges are typically located along major transportation routes in Omaha. Since these routes are heavily used, a failure in these areas would cause major traffic disruptions and safety concerns.
 
-<!-- Show the data via a plot -->
+These findings reinforce the importance of prioritizing bridges that combine both structural concerns and high usage.
 
 ### Calculation of Bridge Risk
 
-Overall bridge risk combines the probability of failure and the consequences of failure:
+Overall bridge risk combines relative failure risk and the consequences of failure:
 
-**Risk = Probability of Failure × Consequence of Failure**
+**Risk = Relative Failure Risk × Consequence of Failure**
 
-As shown in @fig-risk, bridge condition is used to estimate failure risk, and traffic data is used to estimate the impact of a failure.
+As shown in @fig-risk, bridge condition is used as a proxy for relative failure risk, and traffic data is used to estimate the impact of a failure.
 
 ::: {#fig-risk}
 

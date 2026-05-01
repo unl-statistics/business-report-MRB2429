@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Results – Evaluation of Bridges Collapsing in Omaha, Nebraska</title>
+<title>3&nbsp; Results – Bridge Collapse Risk Assessment in Omaha, Nebraska</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,7 +50,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Conclusion.html" rel="next">
+<link href="./conclusion.html" rel="next">
 <link href="./methods.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -121,7 +121,7 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Evaluation of Bridges Collapsing in Omaha, Nebraska</a> 
+      <a href="./">Bridge Collapse Risk Assessment in Omaha, Nebraska</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -157,7 +157,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Conclusion.html" class="sidebar-item-text sidebar-link">
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
   </div>
 </li>
@@ -178,7 +178,7 @@ div.csl-indent {
    
   <ul>
   <li><a href="#data" id="toc-data" class="nav-link active" data-scroll-target="#data"><span class="header-section-number">3.1</span> Data</a></li>
-  <li><a href="#probability-of-failure" id="toc-probability-of-failure" class="nav-link" data-scroll-target="#probability-of-failure"><span class="header-section-number">3.2</span> Probability of Failure</a></li>
+  <li><a href="#relative-failure-risk" id="toc-relative-failure-risk" class="nav-link" data-scroll-target="#relative-failure-risk"><span class="header-section-number">3.2</span> Relative Failure Risk</a></li>
   <li><a href="#consequences-of-failure" id="toc-consequences-of-failure" class="nav-link" data-scroll-target="#consequences-of-failure"><span class="header-section-number">3.3</span> Consequences of Failure</a>
   <ul class="collapse">
   <li><a href="#calculation-of-bridge-risk" id="toc-calculation-of-bridge-risk" class="nav-link" data-scroll-target="#calculation-of-bridge-risk"><span class="header-section-number">3.3.1</span> Calculation of Bridge Risk</a></li>
@@ -210,29 +210,114 @@ div.csl-indent {
 
 <section id="data" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="data"><span class="header-section-number">3.1</span> Data</h2>
-<p>The data set includes 511 bridges in the Omaha (Douglas County) area. The average bridge age is about 45 years, showing a mix of older and newer structures.</p>
-<!-- This is a great place for a histogram of bridge age -->
-<p>Most bridges have condition ratings that fall within fair to good categories.</p>
+<div class="cell">
+<div id="tbl-summary" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.1: Summary statistics for Omaha bridges.
+</figcaption>
+<div aria-describedby="tbl-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Statistic</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Number of bridges</td>
+<td style="text-align: left;">511</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Average bridge age</td>
+<td style="text-align: left;">40.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Poor-condition bridges</td>
+<td style="text-align: left;">16</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Percent poor condition</td>
+<td style="text-align: left;">3.1%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Maximum daily traffic</td>
+<td style="text-align: left;">182320</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>The summary statistics in <a href="#tbl-summary" class="quarto-xref">Table&nbsp;<span>3.1</span></a> provide an overview of the Omaha bridge data set. A total of 511 bridges were included in the analysis, with an average age of approximately 45 years. Only 16 bridges, or about 3%, were classified as being in poor condition. These statistics indicate that most bridges are in acceptable condition, although a small subset may require additional attention.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-age" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-age-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="results_files/figure-html/fig-age-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-age-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Distribution of bridge age in Omaha.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The distribution of bridge age is shown in <a href="#fig-age" class="quarto-xref">Figure&nbsp;<span>3.1</span></a>. The data set includes both newer and older bridges, which supports using bridge age as part of the analysis.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-condition" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-condition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="results_files/figure-html/fig-condition-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-condition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: Distribution of bridge condition ratings.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The distribution of condition ratings is shown in <a href="#fig-condition" class="quarto-xref">Figure&nbsp;<span>3.2</span></a>, with most bridges falling into fair to good categories.</p>
 <p>Out of the 511 bridges analyzed, 16 bridges have a condition rating of 4 or below, indicating poorer condition. This represents about 3% of all bridges, suggesting that most bridges are not currently in poor condition.</p>
-<p>Traffic levels vary across bridges. Some carry only a small number of vehicles per day, while others carry over 100,000 vehicles per day, especially on major highways.</p>
-<!-- Again, this is a good place for a plot! -->
+<p>Traffic levels vary widely across bridges, with some carrying only a small number of vehicles per day and others exceeding 100,000 vehicles per day.</p>
 </section>
-<section id="probability-of-failure" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="probability-of-failure"><span class="header-section-number">3.2</span> Probability of Failure</h2>
-<p>The analysis shows that bridges with lower condition ratings have a higher risk of failure. Bridges with a lowest condition rating of 4 or below were identified as higher risk bridges.</p>
-<p>The results also show that older bridges tend to have lower condition ratings. This suggests that bridge condition declines over time due to wear and usage. While most bridges are still in acceptable condition, there is a small group of bridges with lower ratings that may be at higher risk.</p>
+<section id="relative-failure-risk" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="relative-failure-risk"><span class="header-section-number">3.2</span> Relative Failure Risk</h2>
+<p>Bridges with lower condition ratings are identified as having higher relative failure risk based on the classification used in this analysis. Bridges with a lowest condition rating of 4 or below were identified as higher risk bridges.</p>
+<p>Older bridges tend to have lower condition ratings, suggesting potential deterioration over time due to wear and usage. While most bridges are still in acceptable condition, there is a small group of bridges with lower ratings that may be at higher risk.</p>
 </section>
 <section id="consequences-of-failure" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="consequences-of-failure"><span class="header-section-number">3.3</span> Consequences of Failure</h2>
-<p>Traffic data shows that bridges with higher daily traffic would cause the largest disruptions if they failed. Bridges that carry very high traffic volumes, especially on major roads like I-80, would have the greatest impact on transportation and public safety.</p>
-<p>Information from NDOT <span class="citation" data-cites="ndot_bridge">(<a href="references.html#ref-ndot_bridge" role="doc-biblioref"><span>“Bridge - <span>NDOT</span>”</span> n.d.</a>)</span> provides context on maintenance and planned repairs, which may help reduce short-term risk. However, bridges that have both high traffic and low condition ratings represent the highest overall risk.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-risk-scatter" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-risk-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="results_files/figure-html/fig-risk-scatter-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-risk-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: Relationship between bridge condition and traffic volume.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The relationship between bridge condition and traffic volume is shown in <a href="#fig-risk-scatter" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>. Bridges with both lower condition ratings and higher traffic volumes represent the highest overall risk, as they combine structural concern with greater potential impact.</p>
+<p>Bridges with higher daily traffic volumes would result in the largest disruptions if a failure were to occur. Bridges that carry very high traffic volumes, especially on major roads like I-80, would have the greatest impact on transportation and public safety.</p>
+<p>Information from NDOT <span class="citation" data-cites="ndot_bridge">(<a href="references.html#ref-ndot_bridge" role="doc-biblioref">Nebraska Department of Transportation n.d.</a>)</span> provides context on maintenance and planned repairs, which may help reduce short-term risk.</p>
 <p>These higher risk bridges are typically located along major transportation routes in Omaha. Since these routes are heavily used, a failure in these areas would cause major traffic disruptions and safety concerns.</p>
-<!-- Show the data via a plot -->
+<p>These findings reinforce the importance of prioritizing bridges that combine both structural concerns and high usage.</p>
 <section id="calculation-of-bridge-risk" class="level3" data-number="3.3.1">
 <h3 data-number="3.3.1" class="anchored" data-anchor-id="calculation-of-bridge-risk"><span class="header-section-number">3.3.1</span> Calculation of Bridge Risk</h3>
-<p>Overall bridge risk combines the probability of failure and the consequences of failure:</p>
-<p><strong>Risk = Probability of Failure × Consequence of Failure</strong></p>
-<p>As shown in <a href="#fig-risk" class="quarto-xref">Figure&nbsp;<span>3.1</span></a>, bridge condition is used to estimate failure risk, and traffic data is used to estimate the impact of a failure.</p>
+<p>Overall bridge risk combines relative failure risk and the consequences of failure:</p>
+<p><strong>Risk = Relative Failure Risk × Consequence of Failure</strong></p>
+<p>As shown in <a href="#fig-risk" class="quarto-xref">Figure&nbsp;<span>3.4</span></a>, bridge condition is used as a proxy for relative failure risk, and traffic data is used to estimate the impact of a failure.</p>
 <div id="fig-risk" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-risk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -254,7 +339,7 @@ D --&gt; E
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-risk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.1: Shows how bridge risk is calculated using condition and traffic data.
+Figure&nbsp;3.4: Shows how bridge risk is calculated using condition and traffic data.
 </figcaption>
 </figure>
 </div>
@@ -271,7 +356,7 @@ Figure&nbsp;3.1: Shows how bridge risk is calculated using condition and traffic
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-ndot_bridge" class="csl-entry" role="listitem">
-<span>“Bridge - <span>NDOT</span>.”</span> n.d. Accessed February 19, 2026. <a href="https://dot.nebraska.gov/business-center/bridge/">https://dot.nebraska.gov/business-center/bridge/</a>.
+Nebraska Department of Transportation. n.d. <span>“Nebraska Bridge Program and Bridge Division Resources.”</span> Accessed April 17, 2026. <a href="https://dot.nebraska.gov/business-center/bridge/">https://dot.nebraska.gov/business-center/bridge/</a>.
 </div>
 </div>
 </section>
@@ -686,7 +771,7 @@ Figure&nbsp;3.1: Shows how bridge risk is calculated using condition and traffic
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Conclusion.html" class="pagination-link" aria-label="Conclusion">
+      <a href="./conclusion.html" class="pagination-link" aria-label="Conclusion">
         <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conclusion</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>

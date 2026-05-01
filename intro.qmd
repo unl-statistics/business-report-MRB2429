@@ -1,5 +1,25 @@
-# Introduction
+# Executive Summary
 
+This report evaluates the risk of bridge failure in Omaha, Nebraska over the next five years. The goal is to help city decision makers understand current risks and identify actions that can reduce those risks.
+
+Data from the National Bridge Inventory and federal traffic statistics were used to analyze bridge condition, age, and traffic levels. Information from the Nebraska Department of Transportation was used to provide additional context on maintenance. Bridge condition ratings were used as a proxy for relative failure risk, while traffic levels were used to represent the potential consequences of a failure.
+
+Most bridges in Omaha are currently in fair to good condition. Out of 511 bridges, only 16, or approximately 3%, have a condition rating of 4 or below, indicating that they may require additional attention. Older bridges tend to have lower condition ratings, suggesting that deterioration over time is an important factor.
+
+Traffic levels vary widely across bridges, with some carrying significantly higher volumes of vehicles than others. A failure on a high traffic bridge would result in major disruptions and potential safety concerns. Bridges with both lower condition ratings and higher traffic volumes represent the greatest overall risk.
+
+Overall, the risk of widespread bridge failure in Omaha is low. However, a small number of bridges should be prioritized for monitoring and maintenance to reduce future risk.
+
+### Recommendations
+
+- Increase monitoring of bridges with lower condition ratings  
+- Prioritize repairs for bridges in poorer condition  
+- Continue regular inspection and maintenance programs  
+- Focus on high-traffic bridges where failure would have the greatest impact  
+
+These actions will help reduce both the likelihood of structural issues and the potential impact of a failure.
+
+# Introduction
 
 Bridge safety has become more of a concern in the United States after several bridge collapses in recent years. One example is the 2022 Pittsburgh bridge collapse [@bridge_collapse]. Events like this have caused cities to pay more attention to the condition and safety of their bridges.
 

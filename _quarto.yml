@@ -5,7 +5,7 @@ project:
     - ./compile-slides
 
 book:
-  title: "Evaluation of Bridges Collapsing in Omaha, Nebraska"
+  title: "Bridge Collapse Risk Assessment in Omaha, Nebraska"
   author: "Max Buettenback"
   page-footer:
     left: "Copyright 2026, Max Buettenback"
